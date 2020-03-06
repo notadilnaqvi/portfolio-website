@@ -1,11 +1,13 @@
 import React from 'react';
 import Header from '../components/header.js';
 import Typing from '../components/typing.js';
+import Title from '../components/title.js';
 
 
 function Home(){
 	return(
 		<div>
+			<Title pageTitle='Home'/>
 			<Header/>
 			<hr/>
 			<div className='home-text'>

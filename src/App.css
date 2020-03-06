@@ -1,38 +1,113 @@
-.App {
+/* HEADER */
+
+h1.logo, h1.logo-dot{
+  display: inline;
+}
+
+.link, .resume{
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 5%;
+}
+
+.logo{
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14pt;
+}
+
+.dot{
+  cursor:pointer;
+  display: inline;
+  font-size: x-large;
+  color: blue;
+  font-weight: 700;
+}
+
+.nav__links{
+  list-style: none;
+}
+
+.nav__links li{
+  font-weight: 500;
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+hr{
+  border: 1px solid black;
+}
+
+.nav__links li:hover{
+  border-bottom: 2px solid blue;
+  border-top: 2px solid white; /*border-changing-div-position hack*/
+}
+
+/* HOME PAGE */
+
+.blue-ify{
+  color: blue;
+  display: inline;
+}
+
+.home-text{
+  border: 1px red solid;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-subtext{
+  font-size: 26pt;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.typing-text{
+  display: inline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.typing-wrapper{
+  color: gray;
+  font-weight: 400;
+  font-size: 12pt;
+}
+
+/* ERROR-404 PAGE */
+
+.error-flex-wrapper{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1.error-sad-smiley{
+  font-size: 72pt;
+  font-weight: 100;
+  color: blue;
+  text-align: center;
+  padding-top: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1.error{
+  font-size: 64pt;
+  font-weight: 100;
+  text-align: center;
+  padding: 20px 0px;
 }
+
+h1.error-subtext{
+  font-size: 18pt;
+  font-weight: 400;
+  text-align: center;
+  color: gray;
+}
+
+
+
+

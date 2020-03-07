@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/header.js';
 import Title from '../components/title.js';
+import Socials from '../components/socials.js';
 
 function Contact(){
 	return(
@@ -8,7 +9,10 @@ function Contact(){
 			<Title pageTitle='Contact'/>
 			<Header/>
 			<hr/>
-			<h1>This is the contacts page!</h1>
+			<div className='contact-flex-wrapper'>
+				<Socials/>
+				<Socials/>
+			</div>
 		</div>
 	);
 }

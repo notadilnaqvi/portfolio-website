@@ -5,7 +5,7 @@ h1.logo, h1.logo-dot{
 }
 
 .link, .resume{
-  font-size: 16px;
+  font-size: calc(10pt + .25vw);
   color: black;
   text-decoration: none;
 }
@@ -22,7 +22,7 @@ header{
   color: black;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14pt;
+  font-size: calc(12pt + .25vw);
 }
 
 .dot{
@@ -38,21 +38,49 @@ header{
 }
 
 .nav__links li{
+  position: relative;
   font-weight: 500;
   display: inline-block;
   margin: 0px 20px;
+}
+
+.nav__links li::after{
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  right: 0;
+  border-bottom: 2px solid blue;
+}
+
+a.nav__links li, .nav__links li::after {
+  transition: all 0.25s ease-out;
+}
+
+.nav__links li:hover::after {
+  left: 0;
+  width: 100%;
 }
 
 hr{
   border: 1px solid black;
 }
 
-.nav__links li:hover{
-  border-bottom: 2px solid blue;
-  border-top: 2px solid white; /*border-changing-div-position hack*/
+/* HOME PAGE */
+
+.home-flex-wrapper{
+  margin-top: 17.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* HOME PAGE */
+.photo{
+  height: calc(250px + 2vh + 2vw);
+  margin-right: 2vw;
+}
 
 .blue-ify{
   color: blue;
@@ -60,21 +88,45 @@ hr{
 }
 
 .home-text{
+  margin-left: 2vw;
   text-align: center;
 }
 
 .home-subtext{
-  font-size: 26pt;
-}
-
-.typing-text{
-  display: inline;
+  font-size:calc(12pt + 1.5vw);
 }
 
 .typing-wrapper{
   color: gray;
   font-weight: 400;
+  font-size:calc(10pt + .5vh);
+}
+
+.typing-text{
+  display: inline;
+  color: blue;
+  font-weight: 500;
+}
+
+.know-more-wrapper{
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.know-more{
+  writing-mode: vertical-rl;
+  font-weight: 500;
   font-size: 12pt;
+}
+
+.know-more-arrow{
+  height: 5vh;
+  margin-top: 6px;
 }
 
 /* ERROR-404 PAGE */
@@ -106,6 +158,111 @@ h1.error-subtext{
   text-align: center;
   color: gray;
 }
+
+.dummy{
+  height: 240px;
+  text-align: center;
+  border-bottom: purple 1px solid;
+  margin: 10px;
+}
+
+/* CONTACTS PAGE */
+
+.contact-flex-wrapper{
+  margin-top: 12vh; 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.socials{
+  list-style: none;
+}
+
+.socials > ul > li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2vw;
+  width: 20vw;
+  min-width: 250px;
+}
+
+img.socials-icon{
+  height: calc(35px + 1vw);
+}
+
+a.social-links{
+  position: relative;
+  font-size: calc(10pt + .25vw);
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+}
+
+a.social-links::after{
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  right: 0;
+  border-bottom: 2px solid blue;
+}
+
+a.social-links, a.social-links::after{
+  transition: all 0.25s ease-out;
+}
+
+a.social-links:hover::after{
+  left: 0;
+  width: 100%;
+}
+
+.social-icon-line{
+  flex-grow: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- ANIMATED UNDERLINE CREDIT ---------- */
+/* USER "ROUNIN" @ https://stackoverflow.com/a/51799566 */
+
+
+/* ---------- OLD STATIC UNDERLINES ---------- */
+/*
+.nav__links{
+  list-style: none;
+}
+
+.nav__links li{
+  font-weight: 500;
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+.nav__links li:hover{
+  border-bottom: 2px solid blue;
+  border-top: 2px solid white; border-changing-div-position hack
+}
+*/
 
 
 

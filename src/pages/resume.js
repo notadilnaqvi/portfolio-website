@@ -1,13 +1,8 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
 import Pdf from '../media/fakey-dakey.pdf';
-
 
 function Resume() {
 	return(
-		<div>
-			{Pdf}
-		</div>
+		window.open(Pdf, '_blank')
 	);
 }
 

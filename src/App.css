@@ -1,4 +1,7 @@
 /* HEADER */
+::selection {
+  background: yellow;
+}
 
 h1.logo, h1.logo-dot{
   display: inline;
@@ -10,12 +13,12 @@ h1.logo, h1.logo-dot{
   text-decoration: none;
 }
 
-
 header{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 13px 5%;
+  background-color: white;
 }
 
 .logo{
@@ -62,6 +65,14 @@ a.nav__links li, .nav__links li::after {
 .nav__links li:hover::after {
   left: 0;
   width: 100%;
+}
+
+.corner-blobs{
+  position: absolute;
+  top: -50px;
+  left: -80px;
+  height: 200px;
+  z-index: -1;
 }
 
 hr{
@@ -181,7 +192,7 @@ h1.error-subtext{
 
 .socials > ul > li{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 2vw;
   width: 20vw;
@@ -199,6 +210,7 @@ a.social-links{
   text-decoration: none;
   font-weight: 500;
   display: inline-block;
+  margin-right: 3vw;
 }
 
 a.social-links::after{
@@ -221,14 +233,89 @@ a.social-links:hover::after{
   width: 100%;
 }
 
-.social-icon-line{
-  flex-grow: 2;
+/* ABOUT PAGE */
+
+.about-flex-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12.5vh 6vw;
 }
 
+.about-heading{
+  font-size: calc(12pt + .25vw);
+  font-weight: 500;
+  border-bottom: 2px blue solid;
+  margin-bottom: 10vh;
+}
 
+.about-segment{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 7.5vh;
+  position: relative;
+}
 
+.about-segment-text{
+  font-size: calc(10pt + .25vw);
+  font-weight: 400;
+}
 
+.about-segment-image{
+  height: 150px;
+  opacity: .20;
+}
 
+.about-segment > .first-blob{
+  position: absolute;
+  height: 125%;
+  opacity: 0.20;
+  left: 15vw;
+}
+
+.about-segment > .second-blob{
+  position: absolute;
+  height: 115%;
+  opacity: 0.20;
+  right: 15vw;
+}
+
+.about-segment > .third-blob{
+  position: absolute;
+  height: 115%;
+  opacity: 0.20;
+  left: 15vw;
+}
+
+.about-segment > .fourth-blob{
+  position: absolute;
+  height: 125%;
+  opacity: 0.20;
+  right: 15vw;
+}
+
+.about-segment > .fifth-blob{
+  position: absolute;
+  height: 125%;
+  opacity: 0.20;
+  left: 10vw;
+}
+
+.about-segment > .sixth-blob{
+  position: absolute;
+  height: 115%;
+  opacity: 0.20;
+  right: 15vw;
+}
+
+/* FOOTER */
+
+.footer{
+  display: flex;
+  
+}
 
 
 

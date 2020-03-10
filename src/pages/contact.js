@@ -1,11 +1,13 @@
 import React from 'react';
-import Header from '../components/header.js';
 import Title from '../components/title.js';
 import Socials from '../components/socials.js';
+import {StickyFooter} from '../components/footer.js';
+import Header from '../components/header.js';
+
 
 function Contact(){
 	return(
-		<div>
+		<>
 			<Title pageTitle='Contact'/>
 			<Header/>
 			<hr/>
@@ -13,7 +15,8 @@ function Contact(){
 				<Socials/>
 				<Socials/>
 			</div>
-		</div>
+			<StickyFooter/>
+		</>
 	);
 }
 

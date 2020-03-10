@@ -9,19 +9,18 @@ import PageNotFound from './pages/error-404.js';
 
 
 function App() {
-	return <Router>
-		<Switch>
-			<Route exact path='/' component={Home}/>
-			
-			<Route exact path='/projects' component={Projects}/>
-			<Route exact path='/contact' component={Contact}/>
-			<Route exact path='/about' component={About}/>
-			<Route exact path='/error-404' component={PageNotFound}/>
-			<Redirect to='/error-404'/>
-		</Switch>
-	</Router>
+	return(
+		<Router>
+			<Switch>
+				<Route exact path='/' component={Home}/>
+				<Route exact path='/projects' component={Projects}/>
+				<Route exact path='/contact' component={Contact}/>
+				<Route exact path='/about' component={About}/>
+				<Route exact path='/error-404' component={PageNotFound}/>
+				<Redirect to='/error-404'/>
+			</Switch>
+		</Router>
+	);
 }
-export default App;
 
-/* <Route exact path='/resume' component={Resume}/> */
-/* import Resume from './pages/resume.js'; */
+export default App;

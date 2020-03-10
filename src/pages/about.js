@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../components/header.js';
 import Title from '../components/title.js';
 import FirstBlob from '../media/blobs/first.png';
 import SecondBlob from '../media/blobs/second.png';
@@ -13,14 +12,16 @@ import ThirdImg from '../media/third.png';
 import FourthImg from '../media/fourth.png';
 import FifthImg from '../media/fifth.png';
 import SixthImg from '../media/sixth.png';
+import {Footer} from '../components/footer.js';
+import Header from '../components/header.js';
 
 
 function About(){
 	return(
-		<div>
+		<>
 			<Title pageTitle='About'/>
 			<Header/>
-			<hr/>	
+			<hr/>
 			<div className="about-flex-wrapper">
 				<h1 className="about-heading">know more about me!</h1>
 				<div className="about-segment">
@@ -73,7 +74,8 @@ function About(){
 				</div>
 				<h1 className="about-heading">stuff I enjoy</h1>
 			</div>
-		</div>
+			<Footer/>
+		</>
 	);
 }
 

@@ -1,13 +1,15 @@
 import React from 'react';
-import Header from '../components/header.js';
 import Typing from '../components/typing.js';
 import Title from '../components/title.js';
 import Photo from '../media/photo.png';
-import Know from '../components/know.js';
+import ArrowThing from '../components/arrowThing.js';
+import {Footer} from '../components/footer.js';
+import Header from '../components/header.js';
+
 
 function Home(){
 	return(
-		<div>
+		<>
 			<Title pageTitle='Home'/>
 			<Header/>
 			<hr/>
@@ -20,8 +22,9 @@ function Home(){
 					<Typing/>
 				</div>
 			</div>
-			<Know/>
-		</div>
+			<ArrowThing/>
+			<Footer className='sticky-footer-hack'/>
+		</>
 	);
 }
 

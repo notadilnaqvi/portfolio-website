@@ -82,7 +82,8 @@ hr{
 /* HOME PAGE */
 
 .home-flex-wrapper{
-  margin-top: 17.5vh;
+  border: 1px red solid;
+  padding-top: 17.5vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,7 +120,7 @@ hr{
   font-weight: 500;
 }
 
-.know-more-wrapper{
+.arrow-thing-flex-wrapper{
   position: absolute;
   right: 30px;
   bottom: 50px;
@@ -129,13 +130,13 @@ hr{
   justify-content: center;
 }
 
-.know-more{
+.arrow-thing-text{
   writing-mode: vertical-rl;
   font-weight: 500;
   font-size: 12pt;
 }
 
-.know-more-arrow{
+.arrow-thing-image{
   height: 5vh;
   margin-top: 6px;
 }
@@ -313,8 +314,31 @@ a.social-links:hover::after{
 /* FOOTER */
 
 .footer{
+  position: relative;
+  bottom: 0px;
+  width:100%;
   display: flex;
-  
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  font-size: 9pt;
+  font-weight: 400;
+  background-color: blue;
+}
+
+.sticky-footer{
+  position: absolute;
+  bottom: 0px;
+  width:100%;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  font-size: 9pt;
+  font-weight: 400;
+  background-color: blue;
 }
 
 
@@ -327,10 +351,6 @@ a.social-links:hover::after{
 
 
 
-
-
-/* ---------- ANIMATED UNDERLINE CREDIT ---------- */
-/* USER "ROUNIN" @ https://stackoverflow.com/a/51799566 */
 
 
 /* ---------- OLD STATIC UNDERLINES ---------- */

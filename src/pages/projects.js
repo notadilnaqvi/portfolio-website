@@ -1,15 +1,17 @@
 import React from 'react';
-import Header from '../components/header.js';
 import Title from '../components/title.js';
+import {Footer} from '../components/footer.js';
+import Header from '../components/header.js';
 
 function Projects(){
 	return(
-		<div>
+		<>
 			<Title pageTitle='Projects'/>
 			<Header/>
 			<hr/>
 			<h1>This is the Projects page!</h1>
-		</div>
+			<Footer/>
+		</>
 	);
 }
 

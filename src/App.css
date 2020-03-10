@@ -82,8 +82,15 @@ hr{
 /* HOME PAGE */
 
 .home-flex-wrapper{
-  border: 1px red solid;
-  padding-top: 17.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: ;
+}
+
+.home-top-section{
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,7 +107,7 @@ hr{
 }
 
 .home-text{
-  margin-left: 2vw;
+  margin-left: 3vw;
   text-align: center;
 }
 
@@ -133,7 +140,7 @@ hr{
 .arrow-thing-text{
   writing-mode: vertical-rl;
   font-weight: 500;
-  font-size: 12pt;
+  font-size: calc(10pt + .25vw);
 }
 
 .arrow-thing-image{
@@ -141,6 +148,67 @@ hr{
   margin-top: 6px;
 }
 
+.home-bottom-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3.5vw 0px;
+}
+
+.home-bottom-section > .segment{
+  min-width: 60vw;
+  font-size: calc(10pt + .25vw);
+  font-weight: 400;
+  margin-bottom: 8vh; 
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.home-bottom-section .segment .link{
+  display: inline-block;
+  text-decoration: none;
+  height: 50px;
+  color: rgb(177, 177, 177);
+  font-weight: 700;
+  font-size: calc(8pt + .25vw);
+  height: 20px;
+}
+
+.home-bottom-section .segment .link:hover{
+  color:blue;
+}
+
+
+
+.home-bottom-section .segment img{
+  position: absolute;
+  opacity: 0.20;
+  z-index: -1;
+}
+.home-bottom-section .segment .first-blob{
+  left: 15px;
+  height: 200%;
+  top: -50px;
+}
+
+.home-bottom-section .segment .second-blob{
+  right: 50px;
+  height: 175%;
+  top: -50px;
+}
+
+.home-bottom-section .segment .third-blob{
+  left: -25px;
+  height: 150%;
+  top: -30px;
+}
+
+.home-bottom-section .segment .fourth-blob{
+  right: 40px;
+  height: 175%;
+  top: -50px;
+}
 /* ERROR-404 PAGE */
 
 .error-flex-wrapper{
@@ -169,13 +237,6 @@ h1.error-subtext{
   font-weight: 400;
   text-align: center;
   color: gray;
-}
-
-.dummy{
-  height: 240px;
-  text-align: center;
-  border-bottom: purple 1px solid;
-  margin: 10px;
 }
 
 /* CONTACTS PAGE */
@@ -236,7 +297,7 @@ a.social-links:hover::after{
 
 /* ABOUT PAGE */
 
-.about-flex-wrapper{
+.know-more-flex-wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -309,6 +370,13 @@ a.social-links:hover::after{
   height: 115%;
   opacity: 0.20;
   right: 15vw;
+}
+
+.enjoyed-stuff-flex-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12.5vh 6vw;
 }
 
 /* FOOTER */

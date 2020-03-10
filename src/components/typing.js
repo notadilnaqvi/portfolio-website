@@ -4,15 +4,19 @@ import Typical from 'react-typical'
 
 function Typing(){
 	return(
-		<p className='typing-wrapper'>
-			I'm a mechanical engineer<br/>who loves to&nbsp;
+		<div className='typing-wrapper'>
+			I'm a mechanical engineer<br/>who loves&nbsp;
 			<Typical
 				className='typing-text'
-				steps={['code', 3000, 'design', 3000]}
+				steps={['to code', 3000,
+						'chess', 2000,
+						'to design', 3000,
+						'minimalism', 2000,
+				]}
 				loop={Infinity}
 				wrapper="p"
 			/>
-		</p>
+		</div>
 
 	);
 }

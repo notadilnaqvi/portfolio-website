@@ -6,11 +6,13 @@ import Projects from './pages/projects.js';
 import Contact from './pages/contact.js';
 import About from './pages/about.js';
 import PageNotFound from './pages/error-404.js';
+import ScrollToTop from './components/scrollToTop.js';
 
 
 function App() {
 	return(
 		<Router>
+			<ScrollToTop/>
 			<Switch>
 				<Route exact path='/' component={Home}/>
 				<Route exact path='/projects' component={Projects}/>

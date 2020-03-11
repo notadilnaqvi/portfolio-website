@@ -75,6 +75,14 @@ a.nav__links li, .nav__links li::after {
   z-index: -1;
 }
 
+.bottom-blobs{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: calc(60px + 2vw + 2vh);
+  z-index: -1;
+}
+
 hr{
   border: 1px solid black;
 }
@@ -86,7 +94,6 @@ hr{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: ;
 }
 
 .home-top-section{
@@ -133,7 +140,7 @@ hr{
   bottom: 50px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
 
@@ -188,19 +195,20 @@ hr{
 }
 .home-bottom-section .segment .first-blob{
   left: 15px;
-  height: 200%;
+  height: calc(140px + 1vw + 1vh);
   top: -50px;
 }
 
 .home-bottom-section .segment .second-blob{
   right: 50px;
-  height: 175%;
+  height: 200%;
+  min-height: 100px;
   top: -50px;
 }
 
 .home-bottom-section .segment .third-blob{
   left: -25px;
-  height: 150%;
+  height: 215%;
   top: -30px;
 }
 
@@ -275,25 +283,24 @@ a.social-links{
   margin-right: 3vw;
 }
 
-a.social-links::after{
-  content: '';
-  position: absolute;
-  display: block;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  right: 0;
-  border-bottom: 2px solid blue;
+a.social-links:hover{
+  color: blue;
 }
 
-a.social-links, a.social-links::after{
-  transition: all 0.25s ease-out;
-}
+a.social-links.email:hover span{display:none}
+a.social-links.email:hover:before {content:"adilnaqvi.ug@smme.edu.pk"}
 
-a.social-links:hover::after{
-  left: 0;
-  width: 100%;
-}
+a.social-links.github:hover span{display:none}
+a.social-links.github:hover:before {content:"github.com/notadilnaqvi"}
+
+a.social-links.behance:hover span{display:none}
+a.social-links.behance:hover:before {content:"behance.net/notadilnaqvi"}
+
+a.social-links.fb:hover span{display:none}
+a.social-links.fb:hover:before {content:"facebook.com/notadilnaqvi"}
+
+a.social-links.lichess:hover span{display:none}
+a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
 
 /* ABOUT PAGE */
 
@@ -327,7 +334,7 @@ a.social-links:hover::after{
 
 .about-segment-image{
   height: 150px;
-  opacity: .20;
+  opacity: .75;
 }
 
 .about-segment > .first-blob{

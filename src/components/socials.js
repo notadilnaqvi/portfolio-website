@@ -11,23 +11,33 @@ function Socials(){
 		<div className='socials'>
 			<ul>
 				<li>
-					<a href="mailto: adilnaqvi.ug@smme.edu.pk" className='social-links'>drop me an email</a>
+					<a href="mailto: adilnaqvi.ug@smme.edu.pk" className='social-links email' id='email'>
+						<span>drop me an email</span>
+					</a>
 					<img className='socials-icon' src={emailIcon} alt=""/>
 				</li>
 				<li>
-					<a href="https://github.com/notadilnaqvi" target="_blank" rel="noopener noreferrer" className='social-links'>view my code</a>
+					<a href="https://github.com/notadilnaqvi" target="_blank" rel="noopener noreferrer" className='social-links github'>
+						<span>view my code</span>
+					</a>
 					<img className='socials-icon' src={githubIcon} alt=""/>
 				</li>
 				<li>
-					<a href="https://www.behance.net/sahnbk" target="_blank" rel="noopener noreferrer" className='social-links'>see my designs</a>
+					<a href="https://www.behance.net/notadilnaqvi" target="_blank" rel="noopener noreferrer" className='social-links behance'>
+						<span>see my designs</span>
+					</a>
 					<img className='socials-icon' src={behanceIcon} alt=""/>
 				</li>
 				<li>
-					<a href="https://www.facebook.com/notadilnaqvi" target="_blank" rel="noopener noreferrer" className='social-links'>know me better</a>
+					<a href="https://www.facebook.com/notadilnaqvi" target="_blank" rel="noopener noreferrer" className='social-links fb'>
+						<span>know me better</span>
+					</a>
 					<img className='socials-icon' src={fbIcon} alt=""/>
 				</li>
 				<li>
-					<a href="https://lichess.org/@/sahnbk" target="_blank" rel="noopener noreferrer" className='social-links'>watch my games</a>
+					<a href="https://lichess.org/@/sahnbk" target="_blank" rel="noopener noreferrer" className='social-links lichess'>
+						<span>watch my games</span>
+					</a>
 					<img className='socials-icon' src={lichessIcon} alt=""/>
 				</li>
 			</ul>

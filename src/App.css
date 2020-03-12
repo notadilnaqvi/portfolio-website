@@ -59,7 +59,7 @@ header{
 }
 
 a.nav__links li, .nav__links li::after {
-  transition: all 0.25s ease-out;
+  transition: all 0.25s ease;
 }
 
 .nav__links li:hover::after {
@@ -176,17 +176,16 @@ hr{
   display: inline-block;
   text-decoration: none;
   height: 50px;
-  color: rgb(177, 177, 177);
+  color: rgb(175, 175, 175);
   font-weight: 700;
-  font-size: calc(8pt + .25vw);
+  font-size: calc(9pt + .15vw);
   height: 20px;
+  transition: all 0.25s ease;
 }
 
 .home-bottom-section .segment .link:hover{
   color:blue;
 }
-
-
 
 .home-bottom-section .segment img{
   position: absolute;
@@ -201,20 +200,20 @@ hr{
 
 .home-bottom-section .segment .second-blob{
   right: 50px;
-  height: 200%;
+  height: calc(150px + 1vw + 1vh);
   min-height: 100px;
-  top: -50px;
+  top: -40px;
 }
 
 .home-bottom-section .segment .third-blob{
   left: -25px;
-  height: 215%;
-  top: -30px;
+  height: calc(160px + 1vw + 1vh);
+  top: -40px;
 }
 
 .home-bottom-section .segment .fourth-blob{
   right: 40px;
-  height: 175%;
+  height: calc(175px + 1vw + 1vh);
   top: -50px;
 }
 /* ERROR-404 PAGE */
@@ -308,7 +307,8 @@ a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12.5vh 6vw;
+  padding: 12.5vh 6vw 0vw;
+
 }
 
 .about-heading{
@@ -333,7 +333,7 @@ a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
 }
 
 .about-segment-image{
-  height: 150px;
+  height: calc(115px + 2vw);
   opacity: .75;
 }
 
@@ -369,7 +369,7 @@ a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
   position: absolute;
   height: 125%;
   opacity: 0.20;
-  left: 10vw;
+  left: 12.5vw;
 }
 
 .about-segment > .sixth-blob{
@@ -383,7 +383,92 @@ a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12.5vh 6vw;
+  padding-top: 2vh;
+}
+
+/* PROJECTS PAGE */
+
+.projects-flex-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px blue solid; */
+  /* align-items: center; */
+  justify-content: space-evenly;
+  margin: 5vw 10vw 0vw 10vw;
+  font-size: calc(10pt + .25vw);
+}
+
+.project-tile{
+  width: 20vw;
+  margin: 4vh 2.5vw;
+  padding: 10px 15px;
+  border: 2px white solid;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+}
+
+.project-tile:hover{
+  border: 2px blue solid;
+}
+
+.project-tile-hack{
+  width: 20vw;
+  margin: 4vh 2.5vw;
+}
+
+.tile-heading{
+  display: inline;
+  font-weight: 500;
+  border-bottom: 2px blue solid;
+}
+
+.tag{
+  display: inline;
+  color: white;
+  border-radius: 2px;
+  background-color: lightblue;
+  padding:  1px 4px;
+  margin: 0px 0px 3px 3px;
+  font-size: 10pt;
+}
+
+.tag.year{
+  background-color: lightgray;
+}
+
+.tag.field{
+  background-color: lightsalmon;
+}
+
+.tile-tags{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.tile-info{
+  font-size: calc(9pt + .25vw);
+  margin: 4px 0px;
+  /* text-align: unset; */
+  flex-grow: 2;
+}
+
+.tile-link{
+  text-align: right;
+}
+
+.tile-link > a{
+  text-decoration: none;
+  transition: all 0.25s ease;
+  color: lightgray;
+  font-size: calc(9pt + .15vw);
+  font-weight: 700;
+}
+
+.tile-link > a:hover{
+  color: blue;
+  cursor: pointer;
 }
 
 /* FOOTER */
@@ -416,6 +501,40 @@ a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
   background-color: blue;
 }
 
+.footer-text{
+  display: flex;
+  /* align-content: center; */
+  justify-content: space-between;
+
+}
+
+@media only screen and (max-width: 850px) {
+  .project-tile{
+    width: 30vw;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .project-tile{
+    width: 60vw;
+    margin: 2.5vh 2.5vw;
+  }
+
+  .sticky-footer, .footer{
+    height: 60px;
+  }
+
+  .footer-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 8pt;
+  }
+
+  .bottom-blobs{
+    bottom: 40px;
+  }
+}
 
 
 

@@ -6,9 +6,11 @@ function Footer(){
 	return(
 		<footer className='footer'>
 			<img src={BottomBlobs} alt='' className='bottom-blobs'/>
-			<p className='footer-text'>
-				Copyright Ⓒ 2020 Adil Naqvi. All Rights Reserved. Made with <span role="img" aria-label="heart">❤️</span> in React.
-			</p>
+			<div className='footer-text'>
+				<div>Copyright Ⓒ 2020 Adil Naqvi.&nbsp;</div>
+				<div>All Rights Reserved.&nbsp;</div>
+				<div>Made with <span role="img" aria-label="heart">❤️</span> in React.&nbsp;</div>
+			</div>
 		</footer>
 	);
 }
@@ -17,11 +19,14 @@ function StickyFooter(){
 	return(
 		<footer className='sticky-footer'>
 			<img src={BottomBlobs} alt='' className='bottom-blobs'/>
-			<p>
-				Copyright Ⓒ 2020 Adil Naqvi. All Rights Reserved. Made with <span role="img" aria-label="heart">❤️</span> in React.
-			</p>
+			<div className='footer-text'>
+				<div>Copyright Ⓒ 2020 Adil Naqvi.</div>
+				<div>All Rights Reserved.</div>
+				<div>Made with <span role="img" aria-label="heart">❤️</span> in React.</div>
+			</div>
 		</footer>
 	);
 }
 
 export {Footer, StickyFooter};
+

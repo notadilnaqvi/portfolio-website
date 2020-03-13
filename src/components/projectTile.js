@@ -12,8 +12,8 @@ function ProjectTile(props){
 		<div className="project-tile">
 			<div className="tile-heading">{props.heading}</div>
 			<div className="tile-tags">
-				{allTagDivs}
 				<div className="tag field">{props.field}</div>
+				{allTagDivs}
 				<div className="tag year">{props.year}</div>
 			</div>
 			<div className="tile-info">{props.info}</div>

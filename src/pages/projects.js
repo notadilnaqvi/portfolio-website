@@ -12,6 +12,8 @@ function Projects(){
 			<Header/>
 			<hr/>
 			<div className='projects-flex-wrapper'>
+
+				{/* CS PROJECTS */}
 				<ProjectTile
 					heading='Portfolio website'
 					tags={['Web design', 'React', 'HTML','CSS']}
@@ -27,7 +29,7 @@ function Projects(){
 					tags={['Machine learning', 'sklearn', 'Python', 'JavaScript']}
 					info='Crowd sourced and preprocessed color data manually and trained a model to classify colors based on their RGB value'
 					link='view on Github'
-					url='https://www.github.com/notadilnaqvi/portfolio-website'
+					url='https://www.github.com/notadilnaqvi/sahnbk.github.io'
 					field='CS'
 					year='2019'
 				/>
@@ -37,6 +39,7 @@ function Projects(){
 					tags={['Genetic algorithm', 'Matlab', 'OOP']}
 					info='Implemented genetic algorithm (with mutation) in Matlab to solve the classic traveling salesman problem'
 					link='view on Github'
+					url='https://github.com/notadilnaqvi/traveling-salesman'
 					field='CS'
 					year='2018'
 				/>
@@ -46,6 +49,7 @@ function Projects(){
 					tags={['Data structures', 'C++']}
 					info='Implemented treaps data structure in C++ to make a functional dictionary with word addition, search and, deletion capabilities'
 					link='view on Github'
+					url='https://github.com/notadilnaqvi/dictionary-using-treaps'
 					field='CS'
 					year='2019'
 				/>
@@ -55,15 +59,27 @@ function Projects(){
 					tags={['SVM', 'KNN', 'sklearn','Python']}
 					info='Implemented 3 methods (SVM, KNN, NN) to classify 9 types of glass based on its composition'
 					link='view on Github'
+					url='https://github.com/notadilnaqvi/glass-identification'
 					field='CS'
 					year='2019'
 				/>
 
 				<ProjectTile
+					heading='SCARA kinematics'
+					tags={['Kinematics','Matlab']}
+					info='Programmed forward and reverse kinematics for SCARA robot with GUI in Matlab'
+					link='view on Github'
+					field='Robotics'
+					year='2018'
+				/>
+
+				{/* COMMUNITY SERVICE PROJECTS */}
+				<ProjectTile
 					heading='Water conservation drive'
-					tags={['Awareness']}
+					tags={['Awareness drive']}
 					info='Condected a water conservation drive at Army Public School, Rawalpindi to spread awareness during the 2018 Pakistan water crisis'
 					link='view PDF report'
+					url='https://github.com/notadilnaqvi/dictionary-using-treaps'
 					field='Community service'
 					year='2019'
 				/>
@@ -76,6 +92,7 @@ function Projects(){
 					field='Community service'
 					year='2018'
 				/>
+
 				<ProjectTile
 					heading='Blood donation drive'
 					tags={['Donation drive']}
@@ -84,6 +101,54 @@ function Projects(){
 					field='Community service'
 					year='2017'
 				/>
+
+				{/* MECH. PROJECTS */}
+				<ProjectTile
+					heading='UAV landing gear design'
+					tags={['SolidWorks','Simulink','ANSYS']}
+					info='Designed an oleo strut for a UAV and ran dynamic analysis to evaluate crashworthiness. Fabricated a scalled down model'
+					link='view PDF report'
+					field='Mech.'
+					year='2019'
+				/>
+
+				<ProjectTile
+					heading='Pressure hull design'
+					tags={['SolidWorks', 'ANSYS']}
+					info='Designed a basic submarine’s pressure hull from scratch in SolidWorks and ran static analysis using ANSYS'
+					link='view PDF report'
+					field='Mech.'
+					year='2017'
+				/>
+
+				<ProjectTile
+					heading='Automatic braking system'
+					tags={['Ardiono','Lab View']}
+					info='Implemented automatic braking system on an RC car using Arduino UNO and ultrasonic sensor with data acquisition in Lab View'
+					link='view PDF report'
+					field='Mech.'
+					year='2017'
+				/>
+
+				<ProjectTile
+					heading='Pipe network design'
+					tags={['Fluid dynamics','Pipe Flow Expert']}
+					info='Designed and fabricated a pipe network to achieve required pressure heads at given terminals'
+					link='view PDF report'
+					field='Fluid'
+					year='2017'
+				/>
+
+				<ProjectTile
+					heading='Solar still'
+					tags={['Heat & mass transfer']}
+					info='Theoretically analyzed solar still incorporated with pinned wick, water sprinkler, and PCM with design improvements'
+					link='view PDF report'
+					field='Thermo.'
+					year='2017'
+				/>
+
+				<div className='project-tile-hack'></div>
 				<div className='project-tile-hack'></div>
 			</div>
 			<Footer/>

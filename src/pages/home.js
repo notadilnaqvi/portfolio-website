@@ -60,7 +60,7 @@ function Home(){
 					</p>
 				</div>
 			</div>
-			<Footer className='sticky-footer-hack'/>
+			<Footer/>
 		</>
 	);
 }

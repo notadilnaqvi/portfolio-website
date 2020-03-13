@@ -3,17 +3,19 @@
   background: yellow;
 }
 
-h1.logo, h1.logo-dot{
+h1.logo,
+h1.logo-dot {
   display: inline;
 }
 
-.link, .resume{
+.link,
+.resume {
   font-size: calc(10pt + .25vw);
   color: black;
   text-decoration: none;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,33 +23,33 @@ header{
   background-color: white;
 }
 
-.logo{
+.logo {
   color: black;
   text-decoration: none;
   font-weight: 500;
   font-size: calc(12pt + .25vw);
 }
 
-.dot{
-  cursor:pointer;
+.dot {
+  cursor: pointer;
   display: inline;
   font-size: x-large;
   color: blue;
   font-weight: 700;
 }
 
-.nav__links{
+.nav__links {
   list-style: none;
 }
 
-.nav__links li{
+.nav__links li {
   position: relative;
   font-weight: 500;
   display: inline-block;
   margin: 0px 20px;
 }
 
-.nav__links li::after{
+.nav__links li::after {
   content: '';
   position: absolute;
   display: block;
@@ -58,7 +60,8 @@ header{
   border-bottom: 2px solid blue;
 }
 
-a.nav__links li, .nav__links li::after {
+a.nav__links li,
+.nav__links li::after {
   transition: all 0.25s ease;
 }
 
@@ -67,7 +70,7 @@ a.nav__links li, .nav__links li::after {
   width: 100%;
 }
 
-.corner-blobs{
+.corner-blobs {
   position: absolute;
   top: -50px;
   left: -80px;
@@ -75,7 +78,7 @@ a.nav__links li, .nav__links li::after {
   z-index: -1;
 }
 
-.bottom-blobs{
+.bottom-blobs {
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -83,58 +86,58 @@ a.nav__links li, .nav__links li::after {
   z-index: -1;
 }
 
-hr{
+hr {
   border: 1px solid black;
 }
 
 /* HOME PAGE */
 
-.home-flex-wrapper{
+.home-flex-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.home-top-section{
+.home-top-section {
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.photo{
+.photo {
   height: calc(250px + 2vh + 2vw);
   margin-right: 2vw;
 }
 
-.blue-ify{
+.blue-ify {
   color: blue;
   display: inline;
 }
 
-.home-text{
+.home-text {
   margin-left: 3vw;
   text-align: center;
 }
 
-.home-subtext{
-  font-size:calc(12pt + 1.5vw);
+.home-subtext {
+  font-size: calc(12pt + 1.5vw);
 }
 
-.typing-wrapper{
+.typing-wrapper {
   color: gray;
   font-weight: 400;
-  font-size:calc(10pt + .5vh);
+  font-size: calc(10pt + .5vh);
 }
 
-.typing-text{
+.typing-text {
   display: inline;
   color: blue;
   font-weight: 500;
 }
 
-.arrow-thing-flex-wrapper{
+.arrow-thing-flex-wrapper {
   position: absolute;
   right: 30px;
   bottom: 50px;
@@ -144,35 +147,35 @@ hr{
   justify-content: center;
 }
 
-.arrow-thing-text{
+.arrow-thing-text {
   writing-mode: vertical-rl;
   font-weight: 500;
   font-size: calc(10pt + .25vw);
 }
 
-.arrow-thing-image{
+.arrow-thing-image {
   height: 5vh;
   margin-top: 6px;
 }
 
-.home-bottom-section{
+.home-bottom-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 3.5vw 0px;
 }
 
-.home-bottom-section > .segment{
+.home-bottom-section>.segment {
   min-width: 60vw;
   font-size: calc(10pt + .25vw);
   font-weight: 400;
-  margin-bottom: 8vh; 
+  margin-bottom: 8vh;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.home-bottom-section .segment .link{
+.home-bottom-section .segment .link {
   display: inline-block;
   text-decoration: none;
   height: 50px;
@@ -183,48 +186,50 @@ hr{
   transition: all 0.25s ease;
 }
 
-.home-bottom-section .segment .link:hover{
-  color:blue;
+.home-bottom-section .segment .link:hover {
+  color: blue;
 }
 
-.home-bottom-section .segment img{
+.home-bottom-section .segment img {
   position: absolute;
   opacity: 0.20;
   z-index: -1;
 }
-.home-bottom-section .segment .first-blob{
+
+.home-bottom-section .segment .first-blob {
   left: 15px;
   height: calc(140px + 1vw + 1vh);
   top: -50px;
 }
 
-.home-bottom-section .segment .second-blob{
+.home-bottom-section .segment .second-blob {
   right: 50px;
   height: calc(150px + 1vw + 1vh);
   min-height: 100px;
   top: -40px;
 }
 
-.home-bottom-section .segment .third-blob{
+.home-bottom-section .segment .third-blob {
   left: -25px;
   height: calc(160px + 1vw + 1vh);
   top: -40px;
 }
 
-.home-bottom-section .segment .fourth-blob{
+.home-bottom-section .segment .fourth-blob {
   right: 40px;
   height: calc(175px + 1vw + 1vh);
   top: -50px;
 }
+
 /* ERROR-404 PAGE */
 
-.error-flex-wrapper{
+.error-flex-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-h1.error-sad-smiley{
+h1.error-sad-smiley {
   font-size: 72pt;
   font-weight: 100;
   color: blue;
@@ -232,14 +237,14 @@ h1.error-sad-smiley{
   padding-top: 40px;
 }
 
-h1.error{
+h1.error {
   font-size: 64pt;
   font-weight: 100;
   text-align: center;
   padding: 20px 0px;
 }
 
-h1.error-subtext{
+h1.error-subtext {
   font-size: 18pt;
   font-weight: 400;
   text-align: center;
@@ -248,18 +253,19 @@ h1.error-subtext{
 
 /* CONTACTS PAGE */
 
-.contact-flex-wrapper{
-  margin-top: 12vh; 
+.contact-flex-wrapper {
+  margin-top: 12vh;
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
 }
 
-.socials{
+
+.socials {
   list-style: none;
+  width: 300px;
 }
 
-.socials > ul > li{
+.socials>ul>li {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -268,11 +274,11 @@ h1.error-subtext{
   min-width: 250px;
 }
 
-img.socials-icon{
+img.socials-icon {
   height: calc(35px + 1vw);
 }
 
-a.social-links{
+a.social-links {
   position: relative;
   font-size: calc(10pt + .25vw);
   color: black;
@@ -282,28 +288,53 @@ a.social-links{
   margin-right: 3vw;
 }
 
-a.social-links:hover{
+a.social-links:hover {
   color: blue;
 }
 
-a.social-links.email:hover span{display:none}
-a.social-links.email:hover:before {content:"adilnaqvi.ug@smme.edu.pk"}
+a.social-links.email:hover span {
+  display: none
+}
 
-a.social-links.github:hover span{display:none}
-a.social-links.github:hover:before {content:"github.com/notadilnaqvi"}
+a.social-links.email:hover:before {
+  content: "adilnaqvi.ug@smme.edu.pk"
+}
 
-a.social-links.behance:hover span{display:none}
-a.social-links.behance:hover:before {content:"behance.net/notadilnaqvi"}
+a.social-links.github:hover span {
+  display: none
+}
 
-a.social-links.fb:hover span{display:none}
-a.social-links.fb:hover:before {content:"facebook.com/notadilnaqvi"}
+a.social-links.github:hover:before {
+  content: "github.com/notadilnaqvi"
+}
 
-a.social-links.lichess:hover span{display:none}
-a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
+a.social-links.behance:hover span {
+  display: none
+}
+
+a.social-links.behance:hover:before {
+  content: "behance.net/notadilnaqvi"
+}
+
+a.social-links.fb:hover span {
+  display: none
+}
+
+a.social-links.fb:hover:before {
+  content: "facebook.com/notadilnaqvi"
+}
+
+a.social-links.lichess:hover span {
+  display: none
+}
+
+a.social-links.lichess:hover:before {
+  content: "lichess.org/@/sahnbk"
+}
 
 /* ABOUT PAGE */
 
-.know-more-flex-wrapper{
+.know-more-flex-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -311,14 +342,14 @@ a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
 
 }
 
-.about-heading{
+.about-heading {
   font-size: calc(12pt + .25vw);
   font-weight: 500;
   border-bottom: 2px blue solid;
   margin-bottom: 10vh;
 }
 
-.about-segment{
+.about-segment {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -327,59 +358,59 @@ a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
   position: relative;
 }
 
-.about-segment-text{
+.about-segment-text {
   font-size: calc(10pt + .25vw);
   font-weight: 400;
 }
 
-.about-segment-image{
+.about-segment-image {
   height: calc(115px + 2vw);
   opacity: .75;
 }
 
-.about-segment > .first-blob{
+.about-segment>.first-blob {
   position: absolute;
   height: 125%;
   opacity: 0.20;
   left: 15vw;
 }
 
-.about-segment > .second-blob{
+.about-segment>.second-blob {
   position: absolute;
   height: 115%;
   opacity: 0.20;
   right: 15vw;
 }
 
-.about-segment > .third-blob{
+.about-segment>.third-blob {
   position: absolute;
   height: 115%;
   opacity: 0.20;
   left: 15vw;
 }
 
-.about-segment > .fourth-blob{
+.about-segment>.fourth-blob {
   position: absolute;
   height: 125%;
   opacity: 0.20;
   right: 15vw;
 }
 
-.about-segment > .fifth-blob{
+.about-segment>.fifth-blob {
   position: absolute;
   height: 125%;
   opacity: 0.20;
   left: 12.5vw;
 }
 
-.about-segment > .sixth-blob{
+.about-segment>.sixth-blob {
   position: absolute;
   height: 115%;
   opacity: 0.20;
   right: 15vw;
 }
 
-.enjoyed-stuff-flex-wrapper{
+.enjoyed-stuff-flex-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -388,7 +419,7 @@ a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
 
 /* PROJECTS PAGE */
 
-.projects-flex-wrapper{
+.projects-flex-wrapper {
   display: flex;
   flex-wrap: wrap;
   /* border: 1px blue solid; */
@@ -398,7 +429,7 @@ a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
   font-size: calc(10pt + .25vw);
 }
 
-.project-tile{
+.project-tile {
   width: 20vw;
   margin: 4vh 2.5vw;
   padding: 10px 15px;
@@ -408,57 +439,56 @@ a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
   transition: all 0.25s ease;
 }
 
-.project-tile:hover{
+.project-tile:hover {
   border: 2px blue solid;
 }
 
-.project-tile-hack{
+.project-tile-hack {
   width: 20vw;
   margin: 4vh 2.5vw;
 }
 
-.tile-heading{
+.tile-heading {
   display: inline;
   font-weight: 500;
   border-bottom: 2px blue solid;
 }
 
-.tag{
+.tag {
   display: inline;
   color: white;
   border-radius: 2px;
   background-color: lightblue;
-  padding:  1px 4px;
+  padding: 1px 4px;
   margin: 0px 0px 3px 3px;
   font-size: 10pt;
 }
 
-.tag.year{
+.tag.year {
   background-color: lightgray;
 }
 
-.tag.field{
+.tag.field {
   background-color: lightsalmon;
 }
 
-.tile-tags{
+.tile-tags {
   display: flex;
   flex-wrap: wrap;
   margin-top: 15px;
 }
 
-.tile-info{
+.tile-info {
   font-size: calc(9pt + .25vw);
-  margin: 4px 0px;
-  /* text-align: unset; */
+  margin: 4px 0px 4px 4px;
   flex-grow: 2;
 }
 
-.tile-link{
+.tile-link {
   text-align: right;
 }
 
-.tile-link > a{
+.tile-link>a {
   text-decoration: none;
   transition: all 0.25s ease;
   color: lightgray;
@@ -466,17 +496,17 @@ a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
   font-weight: 700;
 }
 
-.tile-link > a:hover{
+.tile-link>a:hover {
   color: blue;
   cursor: pointer;
 }
 
 /* FOOTER */
 
-.footer{
+.footer {
   position: relative;
   bottom: 0px;
-  width:100%;
+  width: 100%;
   display: flex;
   color: white;
   justify-content: center;
@@ -487,10 +517,10 @@ a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
   background-color: blue;
 }
 
-.sticky-footer{
+.sticky-footer {
   position: absolute;
   bottom: 0px;
-  width:100%;
+  width: 100%;
   display: flex;
   color: white;
   justify-content: center;
@@ -501,7 +531,7 @@ a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
   background-color: blue;
 }
 
-.footer-text{
+.footer-text {
   display: flex;
   /* align-content: center; */
   justify-content: space-between;
@@ -509,34 +539,97 @@ a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
 }
 
 @media only screen and (max-width: 850px) {
-  .project-tile{
+  .project-tile {
     width: 30vw;
   }
 }
 
 @media only screen and (max-width: 550px) {
-  .project-tile{
+  .project-tile {
     width: 60vw;
     margin: 2.5vh 2.5vw;
   }
 
-  .sticky-footer, .footer{
+  .sticky-footer,
+  .footer {
     height: 60px;
   }
 
-  .footer-text{
+  .footer-text {
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 8pt;
   }
 
-  .bottom-blobs{
+  .bottom-blobs {
     bottom: 40px;
+  }
+
+  .contact-flex-wrapper{
+    flex-direction: column;
+    border: 1px red solid;
+    align-items: center;
   }
 }
 
+/* FORM */
 
+.contact-form {
+  /* border : 1px red solid; */
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.form-field {
+  /* border : 1px blue solid; */
+  font-size: calc(10pt + .25vw);
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  margin: 1vh 0px;
+}
+
+.salmon-ify {
+  color: salmon
+}
+
+input,
+textarea {
+  border: 2px lightgray solid;
+  outline: none;
+  padding: 2px 4px;
+  font-size: calc(10pt + .15vw);
+  margin-top: 2px;
+}
+
+textarea {
+  height: 75px;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px blue solid;
+}
+
+button {
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: calc(10pt + .25vw);
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  width: 25%;
+  padding: 3px;
+  right: 0px;
+}
+
+button:active {
+  /* border-style: none; */
+  transform: translate(0px, 2px);
+}
 
 
 
@@ -564,7 +657,3 @@ a.social-links.lichess:hover:before {content:"lichess.org/@/sahnbk"}
   border-top: 2px solid white; border-changing-div-position hack
 }
 */
-
-
-
-

@@ -257,12 +257,15 @@ h1.error-subtext {
   margin-top: 12vh;
   display: flex;
   justify-content: space-evenly;
+  margin: 10vh 5vw;
 }
 
 
 .socials {
+  padding-top: 10px;
   list-style: none;
   width: 300px;
+  justify-content: center;
 }
 
 .socials>ul>li {
@@ -270,7 +273,6 @@ h1.error-subtext {
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 2vw;
-  width: 20vw;
   min-width: 250px;
 }
 
@@ -566,10 +568,17 @@ a.social-links.lichess:hover:before {
     bottom: 40px;
   }
 
-  .contact-flex-wrapper{
+  .contact-flex-wrapper {
     flex-direction: column;
-    border: 1px red solid;
     align-items: center;
+  }
+
+  .contact-form {
+    margin-bottom: 10vh;
+  }
+
+  .socials>ul>li {
+    justify-content: space-between;
   }
 }
 
@@ -627,8 +636,7 @@ button {
 }
 
 button:active {
-  /* border-style: none; */
-  transform: translate(0px, 2px);
+  transform: translate(1px, 2px);
 }
 
 

@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
 
 export class Form extends Component {
 
@@ -6,10 +7,10 @@ export class Form extends Component {
 		super(props)
 
 		this.state = {
-			name: "" ,
+			name: "",
 			email: "",
 			org: "",
-			msg:""
+			msg: ""
 		}
 	}
 
@@ -38,21 +39,29 @@ export class Form extends Component {
 	}
 
 	handleSubmit = (event) => {
-		alert(`${this.state.name} ${this.state.email} ${this.state.org} ${this.state.msg}`);
+		event.preventDefault();
+		console.log(this.state);
+		alert("Form submitted!");
+		this.setState({
+			name: "",
+			email: "",
+			org: "",
+			msg: ""
+		})
 	}
 
 	render() {
 		return (
-			<form name="contact" onSubmit={this.handleSubmit} method="get" className="contact-form">
+			<form name="contact" onSubmit={this.handleSubmit} method="post" className="contact-form">
 				<input type="hidden" name="form-name" value="messages" />
 				<div className="form-field">
 					<label>name<span className='salmon-ify'>*</span></label>
-					<input type="text" name="name" value={this.state.name} onChange={this.handleNameChange} required/>
+					<input type="text" name="name" value={this.state.name} onChange={this.handleNameChange} required />
 				</div>
 
 				<div className="form-field">
 					<label>email<span className='salmon-ify'>*</span></label>
-					<input type="email" name="email" value={this.state.email} onChange={this.handleEmailChange} required/>
+					<input type="email" name="email" value={this.state.email} onChange={this.handleEmailChange} required />
 				</div>
 
 				<div className="form-field">
@@ -62,7 +71,7 @@ export class Form extends Component {
 
 				<div className="form-field">
 					<label>message<span className='salmon-ify'>*</span></label>
-					<textarea type="text" name="msg" value={this.state.msg} onChange={this.handleMsgChange} required/>
+					<textarea type="text" name="msg" value={this.state.msg} onChange={this.handleMsgChange} required />
 				</div>
 				<div className="form-field">
 					<button type="submit">submit</button>

@@ -1,85 +1,80 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Swal from 'sweetalert2';
 
 
-export class Form extends Component {
+const encode = (data) => {
+	return Object.keys(data)
+		.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+		.join("&");
+}
+
+class Form extends React.Component {
 
 	constructor(props) {
-		super(props)
+		super(props);
+		this.state = { name: "", email: "", organization: "", message: "" };
+	}
 
-		this.state = {
+	handleSubmit = event => {
+		fetch("/", {
+			method: "POST",
+			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			body: encode({ "form-name": "contact", ...this.state })
+		});
+		this.setState({
 			name: "",
 			email: "",
-			org: "",
-			msg: ""
-		}
-	}
+			organization: "",
+			message: ""
+		});
 
-	handleNameChange = (event) => {
-		this.setState({
-			name: event.target.value
+		Swal.fire({
+			position: "top-center",
+			icon: "success",
+			title: "Submitted!",
+			timer: 3000,
+			width: 250,
+			showConfirmButton: false,
+			confirmButtonColor: "#0000FF"
 		})
-	}
 
-	handleEmailChange = (event) => {
-		this.setState({
-			email: event.target.value
-		})
-	}
-
-	handleOrgChange = (event) => {
-		this.setState({
-			org: event.target.value
-		})
-	}
-
-	handleMsgChange = (event) => {
-		this.setState({
-			msg: event.target.value
-		})
-	}
-
-	handleSubmit = (event) => {
 		event.preventDefault();
-		console.log(this.state);
-		alert("Form submitted!");
-		this.setState({
-			name: "",
-			email: "",
-			org: "",
-			msg: ""
-		})
-	}
+	};
+
+	handleChange = event => this.setState({ [event.target.name]: event.target.value });
 
 	render() {
+		const { name, email, organization, message } = this.state;
 		return (
-			<form name="contact" onSubmit={this.handleSubmit} method="post" className="contact-form">
+			<form onSubmit={this.handleSubmit} className="contact-form">
 				<input type="hidden" name="form-name" value="messages" />
 				<div className="form-field">
 					<label>name<span className='salmon-ify'>*</span></label>
-					<input type="text" name="name" value={this.state.name} onChange={this.handleNameChange} required />
+					<input type="text" name="name" value={name} onChange={this.handleChange} required />
 				</div>
 
 				<div className="form-field">
 					<label>email<span className='salmon-ify'>*</span></label>
-					<input type="email" name="email" value={this.state.email} onChange={this.handleEmailChange} required />
+					<input type="email" name="email" value={email} onChange={this.handleChange} required />
 				</div>
 
 				<div className="form-field">
 					<label>organization</label>
-					<input type="text" name="org" value={this.state.org} onChange={this.handleOrgChange} />
+					<input type="text" name="organization" value={organization} onChange={this.handleChange} />
 				</div>
 
 				<div className="form-field">
 					<label>message<span className='salmon-ify'>*</span></label>
-					<textarea type="text" name="msg" value={this.state.msg} onChange={this.handleMsgChange} required />
+					<textarea type="text" name="message" value={message} onChange={this.handleChange} required />
 				</div>
 				<div className="form-field">
 					<button type="submit">submit</button>
 				</div>
 			</form>
-		)
+		);
 	}
 }
+
 
 export default Form;
 

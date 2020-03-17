@@ -8,6 +8,25 @@ h1.logo-dot {
   display: inline;
 }
 
+button.hamburger{
+  display: none;
+  flex-direction: column;
+  width: 20px;
+  height: 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.hamburger-line{
+  width: 24px;
+  height: 2px;
+  background: blue;
+}
+
 .link,
 .resume {
   font-size: calc(10pt + .25vw);
@@ -89,6 +108,62 @@ a.nav__links li,
 hr {
   border: 1px solid black;
 }
+
+/* HAMBURGER */
+
+.hamburger-wrapper{
+  position: fixed;
+  height: 100vh;
+  background: white;
+  border-left: 2px blue solid;
+  top: 0;
+  right: 0;
+  width: 70vw;
+  max-width: 400px;
+  z-index: 2;
+  padding-top: 40px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.hamburger-wrapper ul{
+  list-style: none;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hamburger-wrapper li{
+  margin: 15px 0px;
+  text-align: center;
+
+}
+
+.hamburger-link{
+  text-decoration:none;
+  cursor: pointer;
+  font-size: calc(12pt + .10vw);
+  color: black;
+  font-weight: 500;
+}
+
+.hamburger-wrapper.open{
+  transform: translateX(0);
+}
+
+.backdrop{
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 0.5;
+  top: 0;
+  right: 0;
+}
+
+
 
 /* HOME PAGE */
 
@@ -544,7 +619,15 @@ a.social-links.lichess:hover:before {
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 565px) {
+
+  button.hamburger{
+    display: flex;
+  }
+
+  nav{
+    display: none;
+  }
   .project-tile, .project-tile:hover {
     width: 75vw;
     margin: 2.5vh 2.5vw;
@@ -621,7 +704,7 @@ textarea:focus {
   border: 2px blue solid;
 }
 
-button {
+button.submit {
   border: none;
   background-color: blue;
   color: white;
@@ -634,7 +717,7 @@ button {
   right: 0px;
 }
 
-button:active {
+button.submit:active {
   transform: translate(1px, 2px);
 }
 

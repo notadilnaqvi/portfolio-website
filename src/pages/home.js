@@ -15,6 +15,7 @@ import FourthBlob from '../media/blobs/fourth.png';
 function Home(){
 	return(
 		<>
+
 			<Title pageTitle='Home'/>
 			<Header/>
 			<hr/>

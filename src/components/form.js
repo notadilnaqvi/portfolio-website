@@ -68,7 +68,7 @@ class Form extends React.Component {
 					<textarea type="text" name="message" value={message} onChange={this.handleChange} required />
 				</div>
 				<div className="form-field">
-					<button type="submit">Submit</button>
+					<button type="submit" className="submit">Submit</button>
 				</div>
 			</form>
 		);

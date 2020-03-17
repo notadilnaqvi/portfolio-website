@@ -49,26 +49,26 @@ class Form extends React.Component {
 			<form onSubmit={this.handleSubmit} className="contact-form">
 				<input type="hidden" name="form-name" value="messages" />
 				<div className="form-field">
-					<label>name<span className='salmon-ify'>*</span></label>
+					<label>Name<span className='salmon-ify'>*</span></label>
 					<input type="text" name="name" value={name} onChange={this.handleChange} required />
 				</div>
 
 				<div className="form-field">
-					<label>email<span className='salmon-ify'>*</span></label>
+					<label>Email<span className='salmon-ify'>*</span></label>
 					<input type="email" name="email" value={email} onChange={this.handleChange} required />
 				</div>
 
 				<div className="form-field">
-					<label>organization</label>
+					<label>Organization</label>
 					<input type="text" name="organization" value={organization} onChange={this.handleChange} />
 				</div>
 
 				<div className="form-field">
-					<label>message<span className='salmon-ify'>*</span></label>
+					<label>Message<span className='salmon-ify'>*</span></label>
 					<textarea type="text" name="message" value={message} onChange={this.handleChange} required />
 				</div>
 				<div className="form-field">
-					<button type="submit">submit</button>
+					<button type="submit">Submit</button>
 				</div>
 			</form>
 		);

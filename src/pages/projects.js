@@ -148,8 +148,7 @@ function Projects(){
 					year='2017'
 				/>
 
-				<div className='project-tile-hack'></div>
-				<div className='project-tile-hack'></div>
+				{/* <div className='project-tile-hack'></div> */}
 			</div>
 			<Footer/>
 		</>

@@ -12,31 +12,31 @@ function Socials(){
 			<ul>
 				<li>
 					<a href="mailto: adilnaqvi.ug@smme.edu.pk" className='social-links email' id='email'>
-						<span>drop me an email</span>
+						<span>Drop me an email</span>
 					</a>
 					<img className='socials-icon' src={emailIcon} alt=""/>
 				</li>
 				<li>
 					<a href="https://github.com/notadilnaqvi" target="_blank" rel="noopener noreferrer" className='social-links github'>
-						<span>view my code</span>
+						<span>View my code</span>
 					</a>
 					<img className='socials-icon' src={githubIcon} alt=""/>
 				</li>
 				<li>
 					<a href="https://www.behance.net/notadilnaqvi" target="_blank" rel="noopener noreferrer" className='social-links behance'>
-						<span>see my designs</span>
+						<span>See my designs</span>
 					</a>
 					<img className='socials-icon' src={behanceIcon} alt=""/>
 				</li>
 				<li>
 					<a href="https://www.facebook.com/notadilnaqvi" target="_blank" rel="noopener noreferrer" className='social-links fb'>
-						<span>know me better</span>
+						<span>Know me better</span>
 					</a>
 					<img className='socials-icon' src={fbIcon} alt=""/>
 				</li>
 				<li>
 					<a href="https://lichess.org/@/sahnbk" target="_blank" rel="noopener noreferrer" className='social-links lichess'>
-						<span>watch my games</span>
+						<span>Watch me play</span>
 					</a>
 					<img className='socials-icon' src={lichessIcon} alt=""/>
 				</li>

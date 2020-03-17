@@ -22,7 +22,7 @@ function KnowMore(){
 		<div className="know-more-flex-wrapper">
 
 			{/* HEADING */}
-			<h1 className="about-heading">some tid bits</h1>
+			<h1 className="about-heading">Some tid bits</h1>
 
 			{/* ME */}
 			<div className="about-segment">

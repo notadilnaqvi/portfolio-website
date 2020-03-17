@@ -424,17 +424,15 @@ a.social-links.lichess:hover:before {
 .projects-flex-wrapper {
   display: flex;
   flex-wrap: wrap;
-  /* border: 1px blue solid; */
-  /* align-items: center; */
   justify-content: space-evenly;
-  margin: 5vw 10vw 0vw 10vw;
+  margin: 5vw 5vw 0vw 5vw;
   font-size: calc(10pt + .25vw);
 }
 
 .project-tile {
   width: 20vw;
-  margin: 4vh 2.5vw;
-  padding: 10px 15px;
+  margin: 2.5vh 2.5vw;
+  padding: 10px;
   border: 2px white solid;
   display: flex;
   flex-direction: column;
@@ -547,9 +545,10 @@ a.social-links.lichess:hover:before {
 }
 
 @media only screen and (max-width: 550px) {
-  .project-tile {
-    width: 60vw;
+  .project-tile, .project-tile:hover {
+    width: 75vw;
     margin: 2.5vh 2.5vw;
+    border: none;
   }
 
   .sticky-footer,

@@ -18,14 +18,18 @@ button.hamburger{
   z-index: 3;
   display: none;
   flex-direction: column;
-  width: 20px;
-  height: 16px;
+  width: 24px;
+  height: 18px;
   border: none;
   outline: none;
   background: transparent;
   cursor: pointer;
   box-sizing: border-box;
   justify-content: space-between;
+}
+
+.button.hamburger:active{
+  background: none;
 }
 
 .hamburger-line{

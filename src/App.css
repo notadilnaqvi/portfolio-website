@@ -430,7 +430,7 @@ a.social-links.lichess:hover:before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12.5vh 6vw 0vw;
+  padding: 7.5vh 6vw 0vw;
 
 }
 
@@ -438,7 +438,7 @@ a.social-links.lichess:hover:before {
   font-size: calc(12pt + .25vw);
   font-weight: 500;
   border-bottom: 2px blue solid;
-  margin-bottom: 10vh;
+  margin-bottom: 7.5vh;
 }
 
 .about-segment {
@@ -448,58 +448,71 @@ a.social-links.lichess:hover:before {
   width: 100%;
   margin-bottom: 7.5vh;
   position: relative;
+  border: 1px red solid;
 }
 
 .about-segment-text {
   font-size: calc(10pt + .25vw);
+  border: 1px red solid;
   font-weight: 400;
+  width: 400px;
+  position: relative;
+
 }
 
 .about-segment-image {
   height: calc(115px + 2vw);
+  border: 1px red solid;
   opacity: .75;
 }
 
-.about-segment>.first-blob {
+.about-segment p .first-blob {
   position: absolute;
-  height: 125%;
+  height: 150px;
   opacity: 0.20;
-  left: 15vw;
+  left: -20px;
+  top: -50px;
+  border: 1px red solid;
 }
 
-.about-segment>.second-blob {
+.about-segment p .second-blob {
   position: absolute;
-  height: 115%;
+  height: 150px;
   opacity: 0.20;
-  right: 15vw;
+  right: -20px;
+  top: -50px;
 }
 
-.about-segment>.third-blob {
+.about-segment p .third-blob {
   position: absolute;
-  height: 115%;
+  height: 150px;
   opacity: 0.20;
-  left: 15vw;
+  left: -20px;
+  top: -50px;
 }
 
-.about-segment>.fourth-blob {
+.about-segment p .fourth-blob {
   position: absolute;
-  height: 125%;
+  height: 150px;
   opacity: 0.20;
-  right: 15vw;
+  right: -20px;
+  top: -50px;
 }
 
-.about-segment>.fifth-blob {
+.about-segment p .fifth-blob {
   position: absolute;
-  height: 125%;
+  height: 150px;
   opacity: 0.20;
-  left: 12.5vw;
+  left: -20px;
+  top: -50px;
 }
 
-.about-segment>.sixth-blob {
+.about-segment p .sixth-blob {
   position: absolute;
-  height: 115%;
+  height: 150px;
   opacity: 0.20;
-  right: 15vw;
+  right: -20px;
+  top: -50px;
 }
 
 .enjoyed-stuff-flex-wrapper {

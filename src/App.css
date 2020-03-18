@@ -26,12 +26,7 @@ button.hamburger{
   cursor: pointer;
   box-sizing: border-box;
   justify-content: space-between;
-  background-color: lightgray;
   padding: 1px 0px; /*FIX FOR WEIRD HAMBURGER CLIPPING BUG IN MOBILE VERSION*/
-}
-
-.button.hamburger:active{
-  background: none;
 }
 
 .hamburger-line{
@@ -372,7 +367,7 @@ h1.error-subtext {
 }
 
 img.socials-icon {
-  height: calc(35px + 1vw);
+  height: 40px;
 }
 
 a.social-links {

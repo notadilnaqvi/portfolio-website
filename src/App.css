@@ -208,6 +208,8 @@ hr {
 .home-text {
   margin-left: 3vw;
   text-align: center;
+  border: 1px red solid;
+
 }
 
 .home-subtext {
@@ -218,6 +220,7 @@ hr {
   color: gray;
   font-weight: 400;
   font-size: calc(10pt + .5vh);
+
 }
 
 .typing-text {
@@ -635,6 +638,19 @@ a.social-links.lichess:hover:before {
 }
 
 @media only screen and (max-width: 565px) {
+
+  .home-top-section {
+    flex-direction: column;
+    border: 1px blue solid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photo{
+    margin-bottom: 50px;
+    border: 1px red solid;
+
+  }
 
   button.hamburger{
     display: flex;

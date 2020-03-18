@@ -10,7 +10,6 @@
 
 h1.logo,
 h1.logo-dot {
-  border: 1px red solid;
   display: inline;
 }
 
@@ -208,8 +207,6 @@ hr {
 .home-text {
   margin-left: 3vw;
   text-align: center;
-  border: 1px red solid;
-
 }
 
 .home-subtext {
@@ -641,15 +638,13 @@ a.social-links.lichess:hover:before {
 
   .home-top-section {
     flex-direction: column;
-    border: 1px blue solid;
     align-items: center;
     justify-content: center;
   }
 
   .photo{
+    margin-top: -25px;
     margin-bottom: 50px;
-    border: 1px red solid;
-
   }
 
   button.hamburger{
@@ -698,14 +693,12 @@ a.social-links.lichess:hover:before {
 /* FORM */
 
 .contact-form {
-  /* border : 1px red solid; */
   display: flex;
   flex-direction: column;
   width: 300px;
 }
 
 .form-field {
-  /* border : 1px blue solid; */
   font-size: calc(10pt + .25vw);
   font-weight: 500;
   display: flex;

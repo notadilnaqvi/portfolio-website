@@ -448,12 +448,10 @@ a.social-links.lichess:hover:before {
   width: 100%;
   margin-bottom: 7.5vh;
   position: relative;
-  border: 1px red solid;
 }
 
 .about-segment-text {
   font-size: calc(10pt + .25vw);
-  border: 1px red solid;
   font-weight: 400;
   width: 400px;
   position: relative;
@@ -462,7 +460,6 @@ a.social-links.lichess:hover:before {
 
 .about-segment-image {
   height: calc(115px + 2vw);
-  border: 1px red solid;
   opacity: .75;
 }
 
@@ -472,7 +469,6 @@ a.social-links.lichess:hover:before {
   opacity: 0.20;
   left: -20px;
   top: -50px;
-  border: 1px red solid;
 }
 
 .about-segment p .second-blob {

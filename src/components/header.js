@@ -22,15 +22,15 @@ class Header extends Component{
 	};
 	
 	render() {
-		let backdrop;
+		let backdropClass = "backdrop hidden";
 
 		if(this.state.menuOpen){
-			backdrop = <div className="backdrop" onClick={this.handleBackdropClick}></div>;
+			backdropClass = "backdrop shown";
 		}
 		return(
-			<React.Fragment>
+			<div className="header-wrapper">
 				<HamburgerMenu show={this.state.menuOpen}/>
-				{backdrop}
+				<div className={backdropClass} onClick={this.handleBackdropClick}></div>
 				<img src={CornerBlobs} alt='' className='corner-blobs'/>
 				<header>
 					<Link to='/' className='logo'>adilnaqvi<div className='dot'>.</div>com</Link>
@@ -44,8 +44,7 @@ class Header extends Component{
 						</ul>
 					</nav>
 				</header>
-				
-			</React.Fragment>
+			</div>
 		);
 	}
 	

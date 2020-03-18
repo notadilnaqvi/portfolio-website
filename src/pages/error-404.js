@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '../components/title.js';
-import {StickyFooter} from '../components/footer.js';
+import Footer from '../components/footer.js';
 import Header from '../components/header.js';
 
 
@@ -15,7 +15,7 @@ function PageNotFound(){
 				<h1 className='error'>404</h1>
 				<h1 className='error-subtext'>page not found</h1>
 			</div>
-			<StickyFooter/>
+			<Footer/>
 		</>
 	);
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '../components/title.js';
-import {Footer} from '../components/footer.js';
+import Footer from '../components/footer.js';
 import Header from '../components/header.js';
 import ProjectTile from '../components/projectTile.js';
 

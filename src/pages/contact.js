@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '../components/title.js';
 import Socials from '../components/socials.js';
 import Form from '../components/form.js';
-import {StickyFooter} from '../components/footer.js';
+import Footer from '../components/footer.js';
 import Header from '../components/header.js';
 
 
@@ -16,7 +16,7 @@ function Contact(){
 				<Form/>
 				<Socials/>
 			</div>
-			<StickyFooter/>
+			<Footer/>
 		</>
 	);
 }

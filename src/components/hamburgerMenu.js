@@ -8,8 +8,10 @@ const HamburgerMenu = props => {
 	if(props.show){
 		menuClass = "hamburger-wrapper open";
 	}
+	
 	return(
 		<div className={menuClass}>
+			
 			<ul>
 				<li><Link to='/' className='hamburger-link'>Home</Link></li>
 				<li><Link to='/about' className='hamburger-link'>About</Link></li>

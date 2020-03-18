@@ -3,12 +3,18 @@
   background: yellow;
 }
 
+.header-wrapper{
+  height: 57px;
+}
+
 h1.logo,
 h1.logo-dot {
+  border: 1px red solid;
   display: inline;
 }
 
 button.hamburger{
+  z-index: 3;
   display: none;
   flex-direction: column;
   width: 20px;
@@ -128,14 +134,14 @@ hr {
 
 .hamburger-wrapper ul{
   list-style: none;
-  height: 60%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .hamburger-wrapper li{
-  margin: 15px 0px;
+  margin: 25px 0px;
   text-align: center;
 
 }
@@ -152,15 +158,21 @@ hr {
   transform: translateX(0);
 }
 
-.backdrop{
+.backdrop.hidden{
+  opacity: 0;
+
+}
+
+.backdrop.shown{
   position: fixed;
   z-index: 1;
   width: 100vw;
   height: 100vh;
   background: black;
-  opacity: 0.5;
+  opacity: 0.75;
   top: 0;
   right: 0;
+  transition: opacity 0.5s ease;
 }
 
 
@@ -302,6 +314,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: calc(100vh - 57px - 27px);
 }
 
 h1.error-sad-smiley {
@@ -329,15 +342,15 @@ h1.error-subtext {
 /* CONTACTS PAGE */
 
 .contact-flex-wrapper {
-  margin-top: 12vh;
   display: flex;
   justify-content: space-evenly;
-  margin: 10vh 5vw;
+  min-height: calc(100vh - 57px - 27px);
+  width: 100%;
+  padding: 7.5vh 7.5vh 0 7.5vh;
 }
 
-
 .socials {
-  padding-top: 10px;
+  padding-bottom: 35px;
   list-style: none;
   width: 300px;
   justify-content: center;

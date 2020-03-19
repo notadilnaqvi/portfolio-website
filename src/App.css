@@ -430,15 +430,16 @@ a.social-links.lichess:hover:before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 7.5vh 6vw 0vw;
-
+  padding: 0vh 5vw;
+  padding-top: 5vh;
 }
 
 .about-heading {
   font-size: calc(12pt + .25vw);
   font-weight: 500;
   border-bottom: 2px blue solid;
-  margin-bottom: 7.5vh;
+  margin: 5vh 0vw;
+
 }
 
 .about-segment {
@@ -511,11 +512,22 @@ a.social-links.lichess:hover:before {
   top: -50px;
 }
 
-.enjoyed-stuff-flex-wrapper {
+.enjoyed-stuff-flex-wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2vh;
+  margin-bottom: 5vh;
+}
+
+.enjoyed-segment{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.enjoyed-segment img{
+  padding: 20px;
 }
 
 /* PROJECTS PAGE */

@@ -348,7 +348,7 @@ h1.error-subtext {
   justify-content: space-evenly;
   min-height: calc(100vh - 57px - 27px);
   width: 100%;
-  padding: 7.5vh 7.5vh 0 7.5vh;
+  padding: 10vh 7.5vh 0 7.5vh;
 }
 
 .socials {
@@ -536,7 +536,7 @@ a.social-links.lichess:hover:before {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 5vw 5vw 0vw 5vw;
+  margin: 5vw;
   font-size: calc(10pt + .25vw);
 }
 

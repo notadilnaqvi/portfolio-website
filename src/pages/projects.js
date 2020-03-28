@@ -68,7 +68,7 @@ function Projects(){
 					heading='SCARA kinematics'
 					tags={['Kinematics','Matlab']}
 					info='Programmed forward and reverse kinematics for SCARA robot with GUI in Matlab'
-					link='view on Github'
+					// link='view on Github'
 					field='Robotics'
 					year='2018'
 				/>
@@ -79,7 +79,7 @@ function Projects(){
 					tags={['Awareness drive']}
 					info='Condected a water conservation drive at Army Public School, Rawalpindi to spread awareness during the 2018 Pakistan water crisis'
 					link='view PDF report'
-					url='https://github.com/notadilnaqvi/dictionary-using-treaps'
+					url='/Water Conservation Drive Report.pdf'
 					field='Community service'
 					year='2019'
 				/>
@@ -89,6 +89,7 @@ function Projects(){
 					tags={['Donation drive']}
 					info='Collected, cleaned and distributed 100+ items of clothing to Wall of Kindness, Rawalpindi'
 					link='view PDF report'
+					url='/Wall of Kindness Report.pdf'
 					field='Community service'
 					year='2018'
 				/>
@@ -98,6 +99,7 @@ function Projects(){
 					tags={['Donation drive']}
 					info='Conducted a blood donation drive at NUST as a member of NUST Community Service Club'
 					link='view event on FB'
+					url='https://www.facebook.com/events/184134498817127/'
 					field='Community service'
 					year='2017'
 				/>
@@ -108,6 +110,7 @@ function Projects(){
 					tags={['SolidWorks','Simulink','ANSYS']}
 					info='Designed an oleo strut for a UAV and ran dynamic analysis to evaluate crashworthiness. Fabricated a scalled down model'
 					link='view PDF report'
+					url='/UAV Landing Gear Design Report.pdf'
 					field='Mech.'
 					year='2019'
 				/>
@@ -117,8 +120,9 @@ function Projects(){
 					tags={['SolidWorks', 'ANSYS']}
 					info='Designed a basic submarine’s pressure hull from scratch in SolidWorks and ran static analysis using ANSYS'
 					link='view PDF report'
+					url='/Pressure Hull Design Report.pdf'
 					field='Mech.'
-					year='2017'
+					year='2018'
 				/>
 
 				<ProjectTile
@@ -126,8 +130,9 @@ function Projects(){
 					tags={['Ardiono','Lab View']}
 					info='Implemented automatic braking system on an RC car using Arduino UNO and ultrasonic sensor with data acquisition in Lab View'
 					link='view PDF report'
+					url='/Automatic Braking System Report.pdf'
 					field='Mech.'
-					year='2017'
+					year='2018'
 				/>
 
 				<ProjectTile
@@ -135,6 +140,7 @@ function Projects(){
 					tags={['Fluid dynamics','Pipe Flow Expert']}
 					info='Designed and fabricated a pipe network to achieve required pressure heads at given terminals'
 					link='view PDF report'
+					url='/Pipe Network Analysis Report.pdf'
 					field='Fluid'
 					year='2017'
 				/>
@@ -144,8 +150,19 @@ function Projects(){
 					tags={['Heat & mass transfer']}
 					info='Theoretically analyzed solar still incorporated with pinned wick, water sprinkler, and PCM with design improvements'
 					link='view PDF report'
+					url='/Solar Still Report.pdf'
 					field='Thermo.'
-					year='2017'
+					year='2018'
+				/>
+
+				<ProjectTile
+					heading='Cooling load of car'
+					tags={['HVAC']}
+					info='Theoretically determined the load required to cool a simplified car cabin'
+					link='view PDF report'
+					url='/Cooling Load of Car Report.pdf'
+					field='Thermo.'
+					year='2018'
 				/>
 
 				{/* <div className='project-tile-hack'></div> */}

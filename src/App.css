@@ -643,9 +643,12 @@ a.social-links.lichess:hover:before {
 
 .footer-text {
   display: flex;
-  /* align-content: center; */
   justify-content: space-between;
+}
 
+.footer-text a{
+  text-decoration: none;
+  color: white;
 }
 
 @media only screen and (max-width: 850px) {
@@ -682,7 +685,7 @@ a.social-links.lichess:hover:before {
 
   .sticky-footer,
   .footer {
-    height: 60px;
+    height: 70px;
   }
 
   .footer-text {

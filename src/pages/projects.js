@@ -67,7 +67,7 @@ function Projects(){
 				<ProjectTile
 					heading='SCARA kinematics'
 					tags={['Kinematics','Matlab']}
-					info='Programmed forward and reverse kinematics for SCARA robot with GUI in Matlab'
+					info='Programmed forward and inverse kinematics for SCARA robot with GUI in Matlab'
 					// link='view on Github'
 					field='Robotics'
 					year='2018'

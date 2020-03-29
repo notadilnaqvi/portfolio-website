@@ -1,5 +1,5 @@
 import React from 'react';
-import read1 from "../media/tiles/tgost-tile.png";
+// import read1 from "../media/tiles/tgost-tile.png";
 import read2 from "../media/tiles/tfm-tile.png";
 import read3 from "../media/tiles/aot-tile.png";
 
@@ -22,7 +22,7 @@ function EnjoyedStuff(){
 		<div className='enjoyed-stuff-flex-wrapper'>
 			<div className="about-heading">What I'm reading</div>	
 			<div className="enjoyed-segment">
-				<img src={read1} alt=""/>
+				{/* <img src={read1} alt=""/> */}
 				<img src={read2} alt=""/>
 				<img src={read3} alt=""/>
 			</div>
@@ -33,7 +33,7 @@ function EnjoyedStuff(){
 				<img src={watch2} alt=""/>
 			</div>
 
-			<div className="about-heading">What I'm listening</div>	
+			<div className="about-heading">What I'm listening to</div>	
 			<div className="enjoyed-segment">
 				<img src={listen1} alt=""/>
 				<img src={listen2} alt=""/>

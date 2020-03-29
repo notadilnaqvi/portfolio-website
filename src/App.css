@@ -324,14 +324,12 @@ h1.error-sad-smiley {
   font-weight: 100;
   color: blue;
   text-align: center;
-  padding-top: 40px;
 }
 
 h1.error {
   font-size: 64pt;
   font-weight: 100;
   text-align: center;
-  padding: 20px 0px;
 }
 
 h1.error-subtext {

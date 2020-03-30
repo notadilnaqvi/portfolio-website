@@ -52,7 +52,7 @@ header {
 .logo {
   color: black;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: calc(12pt + .25vw);
 }
 
@@ -61,7 +61,7 @@ header {
   display: inline;
   font-size: x-large;
   color: blue;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .nav__links {
@@ -70,7 +70,7 @@ header {
 
 .nav__links li {
   position: relative;
-  font-weight: 500;
+  font-weight: 600;
   display: inline-block;
   margin: 0px 20px;
 }
@@ -152,7 +152,7 @@ hr {
   cursor: pointer;
   font-size: calc(12pt + .10vw);
   color: black;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .hamburger-wrapper.open{
@@ -223,7 +223,7 @@ hr {
 .typing-text {
   display: inline;
   color: blue;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .arrow-thing-flex-wrapper {
@@ -238,7 +238,7 @@ hr {
 
 .arrow-thing-text {
   writing-mode: vertical-rl;
-  font-weight: 500;
+  font-weight: 600;
   font-size: calc(10pt + .25vw);
 }
 
@@ -373,7 +373,7 @@ a.social-links {
   font-size: calc(10pt + .25vw);
   color: black;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   display: inline-block;
   margin-right: 3vw;
 }
@@ -433,7 +433,7 @@ a.social-links.lichess:hover:before {
 
 .about-heading {
   font-size: calc(12pt + .25vw);
-  font-weight: 500;
+  font-weight: 600;
   border-bottom: 2px blue solid;
   margin: 5vh 0vw;
 
@@ -558,7 +558,7 @@ a.social-links.lichess:hover:before {
 
 .tile-heading {
   display: inline;
-  font-weight: 500;
+  font-weight: 600;
   border-bottom: 2px blue solid;
 }
 
@@ -721,7 +721,7 @@ a.social-links.lichess:hover:before {
 
 .form-field {
   font-size: calc(10pt + .25vw);
-  font-weight: 500;
+  font-weight: 600;
   display: flex;
   flex-direction: column;
   margin: 1vh 0px;

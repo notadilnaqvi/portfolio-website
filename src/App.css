@@ -765,30 +765,3 @@ button.submit {
 button.submit:active {
   transform: translate(1px, 2px);
 }
-
-
-
-
-
-
-
-
-
-
-/* ---------- OLD STATIC UNDERLINES ---------- */
-/*
-.nav__links{
-  list-style: none;
-}
-
-.nav__links li{
-  font-weight: 500;
-  display: inline-block;
-  margin: 0px 20px;
-}
-
-.nav__links li:hover{
-  border-bottom: 2px solid blue;
-  border-top: 2px solid white; border-changing-div-position hack
-}
-*/

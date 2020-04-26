@@ -42,7 +42,7 @@ function Home(){
 					<img src={SecondBlob} alt="" className='second-blob'/>
 					<p align='right'>
 						I'm very passionate when it comes to <br/> programming. I have <span className='blue-ify'>3 specializations</span> and a <br/> minor in computer science <br/>
-						<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" targer='_black' className='link'>view specializations</a>
+						<a href="#" targer='_black' className='link'>view specializations</a>
 					</p>
 					
 				</div>

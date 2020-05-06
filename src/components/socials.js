@@ -35,7 +35,7 @@ function Socials(){
 					<img className='socials-icon' src={fbIcon} alt=""/>
 				</li>
 				<li>
-					<a href="https://lichess.org/@/sahnbk" target="_blank" rel="noopener noreferrer" className='social-links lichess'>
+					<a href="https://lichess.org/@/notadilnaqvi" target="_blank" rel="noopener noreferrer" className='social-links lichess'>
 						<span>Watch me play</span>
 					</a>
 					<img className='socials-icon' src={lichessIcon} alt=""/>

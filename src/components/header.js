@@ -33,7 +33,7 @@ class Header extends Component{
 				<div className={backdropClass} onClick={this.handleBackdropClick}></div>
 				<img src={CornerBlobs} alt='' className='corner-blobs'/>
 				<header>
-					<Link to='/' className='logo'>adilnaqvi<div className='dot'>.</div>com</Link>
+					<Link to='/' className='logo'>Adil<span className="blue-ify">Naqvi</span><div className='dot'></div></Link>
 					<HamburgerButton menuClick={this.handleMenuToggle}/>
 					<nav>
 						<ul className="nav__links">

@@ -27,7 +27,8 @@ function Projects(){
 				<ProjectTile
 					heading='Color classifier'
 					tags={['Machine learning', 'sklearn', 'Python', 'JavaScript']}
-					info='Crowd sourced and preprocessed color data manually and trained a model to classify colors based on their RGB value'
+					info='Crowd-sourced and preprocessed training data to train a neural network to classify colors
+					based on their RGB value. Achieved 92% accuracy'
 					link='view on Github'
 					url='https://www.github.com/notadilnaqvi/sahnbk.github.io'
 					field='CS'
@@ -37,11 +38,23 @@ function Projects(){
 				<ProjectTile
 					heading='Traveling salesman problem'
 					tags={['Genetic algorithm', 'Matlab', 'OOP']}
-					info='Implemented genetic algorithm (with mutation) in Matlab to solve the classic traveling salesman problem'
+					info='Implemented genetic algorithm (with mutation) in Matlab to solve the classic traveling salesman problem. Achieved optimal
+					path for 20 cities within 30s'
 					link='view on Github'
 					url='https://github.com/notadilnaqvi/traveling-salesman'
 					field='CS'
 					year='2018'
+				/>
+
+				<ProjectTile
+					heading='Glass identification'
+					tags={['SVM', 'KNN', 'sklearn','Python']}
+					info='Used KNN, SVM &amp; NN to classify glass based on its composition. Observed merits and
+					demerits of each method. Achieved 72%, 81% &amp; 83% accuracy respectively'
+					link='view on Github'
+					url='https://github.com/notadilnaqvi/glass-identification'
+					field='CS'
+					year='2019'
 				/>
 
 				<ProjectTile
@@ -50,16 +63,6 @@ function Projects(){
 					info='Implemented treaps data structure in C++ to make a functional dictionary with word addition, search and, deletion capabilities'
 					link='view on Github'
 					url='https://github.com/notadilnaqvi/dictionary-using-treaps'
-					field='CS'
-					year='2019'
-				/>
-
-				<ProjectTile
-					heading='Glass identification'
-					tags={['SVM', 'KNN', 'sklearn','Python']}
-					info='Implemented 3 methods (SVM, KNN, NN) to classify 9 types of glass based on its composition'
-					link='view on Github'
-					url='https://github.com/notadilnaqvi/glass-identification'
 					field='CS'
 					year='2019'
 				/>
@@ -108,7 +111,7 @@ function Projects(){
 				<ProjectTile
 					heading='UAV landing gear design'
 					tags={['SolidWorks','Simulink','ANSYS']}
-					info='Designed an oleo strut for a UAV and ran dynamic analysis to evaluate crashworthiness. Fabricated a scalled down model'
+					info='Designed an oleo strut for a UAV and ran dynamic analysis to evaluate crashworthiness. Fabricated a scaled down model'
 					link='view PDF report'
 					url='/UAV Landing Gear Design Report.pdf'
 					field='Mech.'
@@ -118,7 +121,7 @@ function Projects(){
 				<ProjectTile
 					heading='Pressure hull design'
 					tags={['SolidWorks', 'ANSYS']}
-					info='Designed a basic submarine’s pressure hull from scratch in SolidWorks and ran static analysis using ANSYS'
+					info='Designed a basic submarine’s pressure hull from scratch in SolidWorks and ran static analysis using ANSYS. Achieved 1.7 factor of safety'
 					link='view PDF report'
 					url='/Pressure Hull Design Report.pdf'
 					field='Mech.'
@@ -138,7 +141,7 @@ function Projects(){
 				<ProjectTile
 					heading='Pipe network design'
 					tags={['Fluid dynamics','Pipe Flow Expert']}
-					info='Designed and fabricated a pipe network to achieve required pressure heads at given terminals'
+					info='Designed and fabricated a pipe network to achieve given pressure heads at 7 terminals. Achieved results within 10% of required heads '
 					link='view PDF report'
 					url='/Pipe Network Analysis Report.pdf'
 					field='Fluid'

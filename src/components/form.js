@@ -32,9 +32,7 @@ class Form extends React.Component {
 			position: "top-center",
 			icon: "success",
 			title: "Submitted!",
-			timer: 3000,
 			width: 250,
-			showConfirmButton: false,
 			confirmButtonColor: "#0000FF"
 		})
 

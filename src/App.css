@@ -34,6 +34,15 @@ button.hamburger{
   background: blue;
 }
 
+.home-link{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: calc(9pt + .15vw);
+  border-bottom: 2px blue solid;
+}
+
 .link,
 .resume {
   font-size: calc(10pt + .25vw);

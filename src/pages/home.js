@@ -34,30 +34,30 @@ function Home(){
 			<div className='home-bottom-section'>
 				<div className='segment'>
 					<img src={FirstBlob} alt="" className='first-blob'/>
-					<p>I'm a <span className='blue-ify'>mechanical engineering graduate</span> from <br/> the #1 science and tech university in Pakistan <br/>
-					<Link to='/about' className='link'>Know more</Link>
+					<p>I'm a mechanical engineering graduate from <br/> the #1 science and tech university in Pakistan <br/>
+					<Link to='/about' className='home-link'>About me</Link>
 					</p>
 				</div>
 				<div className='segment'>
 					<img src={SecondBlob} alt="" className='second-blob'/>
 					<p align='right'>
-						I'm very passionate when it comes to <br/> programming. I have <span className='blue-ify'>2 specializations</span> and a <br/> minor in computer science <br/>
-						<a href="/Specializations.pdf" target = "_blank" rel="noopener noreferrer" className='link'>View specializations</a>
+						I'm very passionate when it comes to <br/> programming. I have 2 specializations and a <br/> minor in computer science <br/>
+						<a href="/Specializations.pdf" target = "_blank" rel="noopener noreferrer" className='home-link'>View specializations</a>
 					</p>
 					
 				</div>
 				<div className='segment'>
 					<img src={ThirdBlob} alt="" className='third-blob'/>
-					<p>Along with some web development experience, I <br/> have completed several <span className='blue-ify'>machine learning</span> and AI <br/> projects. This website is one of my latest ones <br/>
-					<Link to='/projects' className='link'>View projects</Link>
+					<p>Along with some web development experience, I <br/> have completed several machine learning and AI <br/> projects. This website is one of my latest ones <br/>
+					<Link to='/projects' className='home-link'>View projects</Link>
 					</p>
 					
 				</div>
 				<div className='segment'>
 					<img src={FourthBlob} alt="" className='fourth-blob'/>
 					<p align='right'>
-						I am currently <span className='blue-ify'>looking for opportunities</span> that <br/> allow me to pursue my love for coding and help <br/> me expand my skill set <br/>
-						<Link to='/contact' className='link' >Contact me</Link>
+						I am currently looking for opportunities that <br/> allow me to pursue my love for coding and help <br/> me expand my skill set <br/>
+						<Link to='/contact' className='home-link' >Contact me</Link>
 					</p>
 				</div>
 			</div>

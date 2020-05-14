@@ -2,8 +2,9 @@ import React from 'react';
 import emailIcon from '../media/icons/email-blob.png';
 import githubIcon from '../media/icons/github-blob.png';
 import behanceIcon from '../media/icons/behance-blob.png';
-import fbIcon from '../media/icons/fb-blob.png';
+import skypeIcon from '../media/icons/skype-blob.png';
 import lichessIcon from '../media/icons/lichess-blob.png';
+import SocialsLink from './socialsLink.jsx';
 
 
 function Socials(){
@@ -11,34 +12,20 @@ function Socials(){
 		<div className='socials'>
 			<ul>
 				<li>
-					<a href="mailto: adilnaqvi.ug@smme.edu.pk" className='social-links email' id='email'>
-						<span>Drop me an email</span>
-					</a>
-					<img className='socials-icon' src={emailIcon} alt=""/>
+					<SocialsLink src={emailIcon} link="adilnaqvi.ug@smme.edu.pk" url="mailto:adilnaqvi.ug@smme.edu.pk" text="Drop me an email"/>
 				</li>
 				<li>
-					<a href="https://github.com/notadilnaqvi" target="_blank" rel="noopener noreferrer" className='social-links github'>
-						<span>View my code</span>
-					</a>
-					<img className='socials-icon' src={githubIcon} alt=""/>
+					<SocialsLink src={skypeIcon} link="live:notadilnaqvi" url="https://web.skype.com/" text="Give me a call"/>
 				</li>
 				<li>
-					<a href="https://www.behance.net/notadilnaqvi" target="_blank" rel="noopener noreferrer" className='social-links behance'>
-						<span>See my designs</span>
-					</a>
-					<img className='socials-icon' src={behanceIcon} alt=""/>
+					<SocialsLink src={githubIcon} link="github.com/notadilnaqvi" url="https://github.com/notadilnaqvi" text="View my code"/>
 				</li>
 				<li>
-					<a href="https://www.facebook.com/notadilnaqvi" target="_blank" rel="noopener noreferrer" className='social-links fb'>
-						<span>Know me better</span>
-					</a>
-					<img className='socials-icon' src={fbIcon} alt=""/>
+					<SocialsLink src={behanceIcon} link="behance.net/notadilnaqvi" url="https://www.behance.net/notadilnaqvi/" text="See my designs"/>
 				</li>
+
 				<li>
-					<a href="https://lichess.org/@/notadilnaqvi" target="_blank" rel="noopener noreferrer" className='social-links lichess'>
-						<span>Watch me play</span>
-					</a>
-					<img className='socials-icon' src={lichessIcon} alt=""/>
+					<SocialsLink src={lichessIcon} link="lichess.org/@/notadilnaqvi" url="https://lichess.org/@/notadilnaqvi" text="Watch me play"/>
 				</li>
 			</ul>
 		</div>

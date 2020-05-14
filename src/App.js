@@ -5,7 +5,7 @@ import Home from './pages/home.js';
 import Projects from './pages/projects.js';
 import Contact from './pages/contact.js';
 import About from './pages/about.js';
-import PageNotFound from './pages/error-404.js';
+import PageNotFound from './pages/error.js';
 import ScrollToTop from './components/scrollToTop.js';
 
 
@@ -18,8 +18,8 @@ function App() {
 				<Route exact path='/projects' component={Projects}/>
 				<Route exact path='/contact' component={Contact}/>
 				<Route exact path='/about' component={About}/>
-				<Route exact path='/error-404' component={PageNotFound}/>
-				<Redirect to='/error-404'/>
+				<Route exact path='/error' component={PageNotFound}/>
+				<Redirect to='/error'/>
 			</Switch>
 		</Router>
 	);

@@ -624,16 +624,17 @@ img.socials-icon {
   }
 
   .contact-form{
-    padding: 0px 5vw;
+    padding: 0px 8vw;
   }
 
   .socials{
-    padding: 0px 5vw;
+    padding: 0px 8vw;
+    padding-bottom: 30px;
   }
 
   .photo{
     margin-top: -25px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   button.hamburger{

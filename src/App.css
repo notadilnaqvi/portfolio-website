@@ -632,6 +632,10 @@ img.socials-icon {
     padding-bottom: 30px;
   }
 
+  .socials>ul>li{
+    margin-bottom: 4vw;
+  }
+
   .photo{
     margin-top: -25px;
     margin-bottom: 20px;

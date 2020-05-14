@@ -623,6 +623,14 @@ img.socials-icon {
     justify-content: center;
   }
 
+  .contact-form{
+    padding: 0px 5vw;
+  }
+
+  .socials{
+    padding: 0px 5vw;
+  }
+
   .photo{
     margin-top: -25px;
     margin-bottom: 50px;

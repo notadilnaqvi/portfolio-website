@@ -33,7 +33,7 @@ class SocialsLink extends Component{
                 <div className={linkClass}>
                     <a href={this.props.url} target = "_blank" rel="noopener noreferrer" className='social-links'>{this.props.link}</a>
                     <CopyToClipboard text={this.props.link}>
-          				<button class="social_link_button">Copy</button>
+          				<button className="social_link_button">Copy</button>
        				</CopyToClipboard>
                 </div>
                 <img src={this.props.src} alt="" className='socials-icon' onClick={this.handleLinkToggle}/>

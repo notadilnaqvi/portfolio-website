@@ -27,12 +27,18 @@ class SocialsLink extends Component{
             linkClass = "link_shown";
             defaultLinkTextClass = "defaultLinkText_hidden"
 		}
+
+		let copy_class = "inherit";
+
+		if(this.props.copy == "hide"){
+			copy_class = "none";
+		}
 		return(
             <>
                 <p className={defaultLinkTextClass}>{this.props.text}</p>
                 <div className={linkClass}>
                     <a href={this.props.url} target = "_blank" rel="noopener noreferrer" className='social-links'>{this.props.link}</a>
-                    <CopyToClipboard text={this.props.link}>
+                    <CopyToClipboard text={this.props.link} style={{display: copy_class}}>
           				<button className="social_link_button">Copy</button>
        				</CopyToClipboard>
                 </div>

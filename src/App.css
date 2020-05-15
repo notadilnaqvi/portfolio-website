@@ -779,3 +779,7 @@ button.social_link_button{
 button.social_link_button:active {
   transform: translate(1px, 2px);
 }
+
+.copy_hidden{
+  display: none;
+}

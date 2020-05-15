@@ -18,14 +18,14 @@ function Socials(){
 					<SocialsLink src={skypeIcon} link="live:notadilnaqvi" url="https://web.skype.com/" text="Give me a call"/>
 				</li>
 				<li>
-					<SocialsLink src={githubIcon} link="github.com/notadilnaqvi" url="https://github.com/notadilnaqvi" text="View my code"/>
+					<SocialsLink src={githubIcon} link="github.com/notadilnaqvi" url="https://github.com/notadilnaqvi" text="View my code" copy="hide"/>
 				</li>
 				<li>
-					<SocialsLink src={behanceIcon} link="behance.net/notadilnaqvi" url="https://www.behance.net/notadilnaqvi/" text="See my designs"/>
+					<SocialsLink src={behanceIcon} link="behance.net/notadilnaqvi" url="https://www.behance.net/notadilnaqvi/" text="See my designs" copy="hide"/>
 				</li>
 
 				<li>
-					<SocialsLink src={lichessIcon} link="lichess.org/@/notadilnaqvi" url="https://lichess.org/@/notadilnaqvi" text="Watch me play"/>
+					<SocialsLink src={lichessIcon} link="lichess.org/@/notadilnaqvi" url="https://lichess.org/@/notadilnaqvi" text="Watch me play" copy="hide"/>
 				</li>
 			</ul>
 		</div>

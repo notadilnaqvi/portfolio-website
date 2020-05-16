@@ -29,7 +29,8 @@ class SocialsLink extends Component{
 		}
 
 		let copy_class = "inherit";
-
+		
+		// eslint-disable-next-line
 		if(this.props.copy == "hide"){
 			copy_class = "none";
 		}

@@ -15,7 +15,7 @@ function Socials(){
 					<SocialsLink src={emailIcon} link="adilnaqvi.ug@smme.edu.pk" url="mailto:adilnaqvi.ug@smme.edu.pk" text="Drop me an email"/>
 				</li>
 				<li>
-					<SocialsLink src={skypeIcon} link="live:notadilnaqvi" url="https://web.skype.com/" text="Give me a call"/>
+					<SocialsLink src={skypeIcon} link="live:notadilnaqvi" url="skype:live:notadilnaqvi?chat" text="Give me a call"/>
 				</li>
 				<li>
 					<SocialsLink src={githubIcon} link="github.com/notadilnaqvi" url="https://github.com/notadilnaqvi" text="View my code" copy="hide"/>

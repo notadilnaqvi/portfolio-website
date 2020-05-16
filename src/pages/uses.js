@@ -12,7 +12,7 @@ function Uses(){
 			<hr/>
             <div className="uses-wrapper">
                 <h1 className="uses-heading">My web development tools</h1>
-                <p className="uses-sub-heading">Inspired by <a href="https://wesbos.com/" className="uses-sub-heading-link">Wes Bos</a></p>
+                <p className="uses-sub-heading">Inspired by <a href="https://wesbos.com" className="uses-sub-heading-link">Wes Bos</a></p>
                 <ul>
                     <li className="uses-li"><b>Editor:</b> VS Code</li>
                     <li className="uses-li"><b>Terminal:</b> Windows Terminal</li>

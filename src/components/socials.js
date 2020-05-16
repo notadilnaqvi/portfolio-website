@@ -21,7 +21,7 @@ function Socials(){
 					<SocialsLink src={githubIcon} link="github.com/notadilnaqvi" url="https://github.com/notadilnaqvi" text="View my code" copy="hide"/>
 				</li>
 				<li>
-					<SocialsLink src={behanceIcon} link="behance.net/notadilnaqvi" url="https://www.behance.net/notadilnaqvi/" text="See my designs" copy="hide"/>
+					<SocialsLink src={behanceIcon} link="behance.net/notadilnaqvi" url="https://www.behance.net/notadilnaqvi" text="See my designs" copy="hide"/>
 				</li>
 
 				<li>

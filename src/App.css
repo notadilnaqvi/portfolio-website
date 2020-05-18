@@ -593,28 +593,9 @@ img.socials-icon {
   background-color: blue;
 }
 
-.sticky-footer {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  display: flex;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  height: 25px;
-  font-size: 9pt;
-  font-weight: 400;
-  background-color: blue;
-}
-
 .footer-text {
   display: flex;
   justify-content: space-between;
-}
-
-.footer-text a{
-  text-decoration: none;
-  color: white;
 }
 
 @media only screen and (max-width: 850px) {
@@ -662,7 +643,6 @@ img.socials-icon {
     border: none;
   }
 
-  .sticky-footer,
   .footer {
     height: 70px;
   }
@@ -809,4 +789,3 @@ text-align: center;
 .uses-wrapper{
   min-height: 100vh;
 }
-

@@ -7,23 +7,56 @@ import Header from '../components/header.js';
 function Uses(){
 	return(
 		<>
-			<Title pageTitle='/uses'/>
+			<Title pageTitle='Uses'/>
 			<Header/>
 			<hr/>
-            <div className="uses-wrapper">
-                <h1 className="uses-heading">My web development tools</h1>
-                <p className="uses-sub-heading">Inspired by <a href="https://wesbos.com" className="uses-sub-heading-link">Wes Bos</a></p>
-                <ul>
-                    <li className="uses-li"><b>Editor:</b> VS Code</li>
-                    <li className="uses-li"><b>Terminal:</b> Windows Terminal</li>
-                    <li className="uses-li"><b>Prototyping:</b> Figma</li>
-                    <li className="uses-li"><b>Git GUI:</b> Git Kraken</li>
-                    <li className="uses-li"><b>Hosting:</b> Netlify</li>
-                    <li className="uses-li"><b>Vector graphics:</b> InkScape</li>
-                    <li className="uses-li"><b>Machine:</b> Dell Inspiron 15 - 4 GB Core i3 1.9 GHz</li>
-                </ul>
-            </div>
+            <div className="uses-flex-wrapper">
+                <p className="uses-top-text">
+                    Tools I use for web development <br/>
+                    Inspired by the <a href="https://uses.tech">/uses</a> trend by <a href="https://wesbos.com">Wes Bos</a> 
+                </p>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td className="uses-category">Editor</td>
+                        <td>VS Code</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td className="table-space-hack">Atom</td>
+                    </tr>
+                    <tr>
+                        <td className="uses-category">Terminal</td>
+                        <td>Windows Terminal</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td className="table-space-hack">Cool Retro Terminal</td>
+                    </tr>
+                    <tr>
+                        <td className="table-space-hack uses-category">Git GUI</td>
+                        <td className="table-space-hack">GitKraken</td>
+                    </tr>
+                    <tr>
+                        <td className="table-space-hack uses-category">Registrar</td>
+                        <td className="table-space-hack">GoDaddy</td>
+                    </tr>
 
+                    <tr>
+                        <td className="table-space-hack uses-category">Hosting</td>
+                        <td className="table-space-hack">Netlify</td>
+                    </tr>
+                    <tr>
+                        <td className="uses-category">Design</td>
+                        <td>Figma</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td className="table-space-hack">InkScape</td>
+                    </tr>  
+                    </tbody>               
+                </table>
+            </div>
 			<Footer/>
 		</>
 	);

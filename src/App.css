@@ -774,7 +774,7 @@ button.social_link_button:active {
 .uses-top-text{
   text-align: center;
   font-weight: 600;
-  margin: 5vh 0vw;
+  margin: 7vh 0vw;
 
 }
 
@@ -795,7 +795,7 @@ td{
 }
 
 .table-space-hack{
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .uses-category{

@@ -12,7 +12,7 @@ function Uses(){
 			<hr/>
             <div className="uses-flex-wrapper">
                 <p className="uses-top-text">
-                    Tools I use for web development <br/>
+                    Tools I use for web development <br/> <br/>
                     Inspired by the <a href="https://uses.tech" target='_blank' rel="noopener noreferrer">/uses</a> trend by <a href="https://wesbos.com" target='_blank' rel="noopener noreferrer">Wes Bos</a> 
                 </p>
                 <table>
@@ -29,9 +29,18 @@ function Uses(){
                         <td className="uses-category">Terminal</td>
                         <td>Windows Terminal</td>
                     </tr>
+                    
                     <tr>
                         <td></td>
                         <td className="table-space-hack">Cool Retro Terminal</td>
+                    </tr>
+                    <tr>
+                        <td className="uses-category">Browser</td>
+                        <td>Edge Chromium</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td className="table-space-hack">Firefox</td>
                     </tr>
                     <tr>
                         <td className="table-space-hack uses-category">Git GUI</td>

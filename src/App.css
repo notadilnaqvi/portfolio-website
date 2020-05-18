@@ -780,8 +780,9 @@ button.social_link_button:active {
 
 .uses-top-text a{
   text-decoration: none;
-  color: blue;
+  color: black;
   font-weight: 600;
+  border-bottom: 2px blue solid;
 }
 
 .uses-flex-wrapper ul{

@@ -336,8 +336,8 @@ h1.error-sad-smiley {
 }
 
 h1.error {
-  font-size: 64pt;
-  font-weight: 100;
+  font-size: 32pt;
+  font-weight: 400;
   text-align: center;
 }
 

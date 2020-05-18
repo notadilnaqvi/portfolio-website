@@ -13,7 +13,7 @@ function Uses(){
             <div className="uses-flex-wrapper">
                 <p className="uses-top-text">
                     Tools I use for web development <br/>
-                    Inspired by the <a href="https://uses.tech">/uses</a> trend by <a href="https://wesbos.com">Wes Bos</a> 
+                    Inspired by the <a href="https://uses.tech" target='_blank' rel="noopener noreferrer">/uses</a> trend by <a href="https://wesbos.com" target='_blank' rel="noopener noreferrer">Wes Bos</a> 
                 </p>
                 <table>
                     <tbody>

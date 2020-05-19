@@ -1,4 +1,5 @@
 import React from 'react';
+import Pronunciation from './pronunciation.js'
 
 // BLOBS
 import FirstBlob from '../media/blobs/first.png';
@@ -26,10 +27,10 @@ function KnowMore(){
 
 			{/* ME */}
 			<div className="about-segment">
-				<p className="about-segment-text">
+				<div className="about-segment-text">
 					<img src={FirstBlob} alt='' className='first-blob'/>
-					My full name is Syed Adil Hasan Naqvi and I usually go by <span className='blue-ify'>Adil</span>
-				</p>
+					My full name is Syed Adil Hasan Naqvi and I usually go by <Pronunciation/>
+				</div>
 				<img src={FirstImg} alt="" height='150px' />
 			</div>
 
@@ -38,7 +39,7 @@ function KnowMore(){
 				<img src={SecondImg} alt="" className="about-segment-image"/>
 				<p className="about-segment-text" align='right'>
 					<img src={SecondBlob} alt='' className='second-blob'/>
-					I'm from <span className="blue-ify">Pakistan</span>, a South Asian country with a rich culture and an even richer history
+					I'm from <a href="https://en.wikipedia.org/wiki/Pakistan" target='_blank' rel="noopener noreferrer"className="know-more-link">Pakistan</a>, a South Asian country with a rich culture and an even richer history
 				</p>
 			</div>
 				
@@ -46,7 +47,7 @@ function KnowMore(){
 			<div className="about-segment">
 				<p className="about-segment-text">
 					<img src={ThirdBlob} alt='' className='third-blob'/>
-					I like playing chess, casual reading, graphics designing, and <span className='blue-ify'>coding</span>
+					I like playing chess, casual reading, graphics designing, and <a href="https://github.com/notadilnaqvi" target='_blank' rel="noopener noreferrer"className="know-more-link">coding</a>
 				</p>
 				<img src={ThirdImg} alt="" className="about-segment-image"/>
 			</div>
@@ -56,7 +57,7 @@ function KnowMore(){
 				<img src={FourthImg} alt="" className="about-segment-image"/>
 				<p className="about-segment-text" align='right'>
 					<img src={FourthBlob} alt='' className='fourth-blob'/>
-					I did my Intermediate from <span className='blue-ify'>GCU</span> Lahore – one of the most prestigious colleges in Pakistan
+					I did my Intermediate from <a href="https://en.wikipedia.org/wiki/Government_College_University,_Lahore" target='_blank' rel="noopener noreferrer"className="know-more-link">GCU</a> Lahore – one of the most prestigious colleges in Pakistan
 				</p>
 			</div>
 
@@ -64,7 +65,7 @@ function KnowMore(){
 			<div className="about-segment">
 				<p className="about-segment-text">
 					<img src={FifthBlob} alt='' className='fifth-blob'/>
-					I majored in Mechanical Engineering from <span className='blue-ify'>NUST</span> – the #1 science and technology university in the country – with a minor in Computer Science
+					I majored in Mechanical Engineering from <a href="https://en.wikipedia.org/wiki/National_University_of_Sciences_%26_Technology#Rankings_and_awards" target='_blank' rel="noopener noreferrer"className="know-more-link">NUST</a> – the #1 science and technology university in the country – with a minor in Computer Science
 				</p>
 				<img src={FifthImg} alt='' className="about-segment-image"/>	
 			</div>
@@ -74,7 +75,7 @@ function KnowMore(){
 				<img src={SixthImg} alt='' className="about-segment-image"/>
 				<p className='about-segment-text' align='right'>
 					<img src={SixthBlob} alt='' className='sixth-blob'/>
-					I am particularly interested in <span className='blue-ify'>machine learning</span> and <span className='blue-ify'>artificial intelligence</span>
+					I am particularly interested in machine learning and artificial intelligence
 				</p>
 			</div>
 		</div>

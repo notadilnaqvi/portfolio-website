@@ -57,7 +57,7 @@ function KnowMore(){
 				<img src={FourthImg} alt="" className="about-segment-image"/>
 				<p className="about-segment-text" align='right'>
 					<img src={FourthBlob} alt='' className='fourth-blob'/>
-					I did my Intermediate from <a href="https://en.wikipedia.org/wiki/Government_College_University,_Lahore" target='_blank' rel="noopener noreferrer"className="know-more-link">GCU</a> Lahore – one of the most prestigious colleges in Pakistan
+					I did my Intermediate from <a href="https://en.wikipedia.org/wiki/Government_College_University,_Lahore#History" target='_blank' rel="noopener noreferrer"className="know-more-link">GCU</a> Lahore – one of the most prestigious colleges in Pakistan
 				</p>
 			</div>
 

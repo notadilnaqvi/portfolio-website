@@ -111,6 +111,7 @@ a.nav__links li,
   left: -80px;
   height: 200px;
   z-index: -1;
+  opacity: 0.4;
 }
 
 .bottom-blobs {
@@ -119,6 +120,8 @@ a.nav__links li,
   right: 0px;
   height: calc(60px + 2vw + 2vh);
   z-index: -1;
+  opacity: 0.4;
+
 }
 
 hr {
@@ -290,7 +293,7 @@ hr {
 
 .home-bottom-section .segment img {
   position: absolute;
-  opacity: 0.20;
+  opacity: 0.075;
   z-index: -1;
 }
 
@@ -299,6 +302,7 @@ hr {
   height: calc(140px + 1vw + 1vh);
   top: -50px;
   z-index: -1;
+  
 }
 
 .home-bottom-section .segment .second-blob {
@@ -435,7 +439,7 @@ img.socials-icon {
 .about-segment div .first-blob {
   position: absolute;
   height: 150px;
-  opacity: 0.20;
+  opacity: 0.075;
   left: -20px;
   top: -50px;
   z-index: -1;
@@ -444,7 +448,7 @@ img.socials-icon {
 .about-segment p .second-blob {
   position: absolute;
   height: 150px;
-  opacity: 0.20;
+  opacity: 0.075;
   right: -20px;
   top: -50px;
   z-index: -1;
@@ -453,7 +457,7 @@ img.socials-icon {
 .about-segment p .third-blob {
   position: absolute;
   height: 150px;
-  opacity: 0.20;
+  opacity: 0.075;
   left: -20px;
   top: -50px;
   z-index: -1;
@@ -462,7 +466,7 @@ img.socials-icon {
 .about-segment p .fourth-blob {
   position: absolute;
   height: 150px;
-  opacity: 0.20;
+  opacity: 0.075;
   right: -20px;
   top: -50px;
   z-index: -1;
@@ -471,7 +475,7 @@ img.socials-icon {
 .about-segment p .fifth-blob {
   position: absolute;
   height: 150px;
-  opacity: 0.20;
+  opacity: 0.075;
   left: -20px;
   top: -50px;
   z-index: -1;
@@ -480,7 +484,7 @@ img.socials-icon {
 .about-segment p .sixth-blob {
   position: absolute;
   height: 150px;
-  opacity: 0.20;
+  opacity: 0.075;
   right: -20px;
   top: -50px;
   z-index: -1;

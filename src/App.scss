@@ -1,0 +1,151 @@
+// VARIABLES
+$primary-color: blue;
+$text-color: black;
+$min-height-desktop: calc(100vh - 60px - 25px);
+$min-height-mobile: calc(100vh - 60px - 25px);
+
+@mixin anchor-reset {
+	text-decoration: none;
+	color: $text-color;
+}
+
+@mixin list-reset {
+	list-style: none;
+}
+
+// GLOBAL STYLES
+.blue-ify {
+	color: $primary-color;
+}
+
+.footer-hack {
+	//TOTAL HEIGHT - HEADER HEIGHT - FOOTER HEIGHT
+	min-height: $min-height-desktop;
+}
+
+// HEADER
+header {
+	display: flex;
+	height: 60px;
+	padding: 0px 5%;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	border-bottom: 2px black solid;
+
+	.logo {
+		@include anchor-reset();
+		font-weight: 600;
+		font-size: calc(12pt + 0.25vw);
+	}
+
+	// SELECTOR BELOW MIGHT CAUSE PROBLEMS
+	ul {
+		@include list-reset();
+
+		li {
+			position: relative;
+			font-weight: 600;
+			display: inline-block;
+			margin: 0px 20px;
+
+			.link {
+				@include anchor-reset();
+				font-size: calc(10pt + 0.25vw);
+
+				&::after {
+					content: "";
+					position: absolute;
+					display: block;
+					bottom: 0;
+					right: 0;
+					width: 0;
+					border-bottom: 2px solid $primary-color;
+					transition: all 0.25s ease;
+				}
+
+				&:hover::after {
+					left: 0;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.backdrop {
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100vw;
+		height: 100vh;
+		background: $primary-color;
+		transition: opacity 0.5s ease;
+		z-index: -1;
+	}
+
+	.hidden {
+		opacity: 0;
+	}
+
+	.shown {
+		opacity: 0.75;
+	}
+}
+
+// FOOTER
+footer {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: 0px;
+	height: 25px;
+	width: 100%;
+	color: white;
+	font-size: 9pt;
+	font-weight: 400;
+	background-color: $primary-color;
+
+	.footer__text {
+		display: flex;
+	}
+
+	a {
+		@include anchor-reset();
+		position: absolute;
+		right: 20px;
+		color: white;
+		font-size: 8pt;
+		opacity: 0.4;
+	}
+}
+
+//ERROR
+
+.error-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: $min-height-desktop;
+
+	.error__text {
+		text-align: center;
+		font-size: 32pt;
+		font-weight: 400;
+	}
+
+	.error__subtext {
+		text-align: center;
+		padding: 5vh 0px;
+		color: gray;
+		font-size: 18pt;
+		font-weight: 400;
+	}
+
+	.error__sad-smiley {
+		text-align: center;
+		color: $primary-color;
+		font-size: 72pt;
+		font-weight: 100;
+	}
+}

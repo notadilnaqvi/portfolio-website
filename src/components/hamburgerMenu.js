@@ -17,7 +17,7 @@ const HamburgerMenu = props => {
 				<li><Link to='/about' className='hamburger-link'>About</Link></li>
 				<li><Link to='/contact' className='hamburger-link'>Contact</Link></li>
 				<li><Link to='/projects' className='hamburger-link'>Projects</Link></li>
-				<li><Link to='/Syed Adil Hasan Naqvi Resume.pdf' target="_blank" className='hamburger-link'>Resume</Link></li>
+				<li><Link to='/Adil Naqvi Resume.pdf' target="_blank" className='hamburger-link'>Resume</Link></li>
 				<li><Link to='/uses' className='hamburger-link'>/uses</Link></li>
 			</ul>
 		</div>

@@ -37,7 +37,7 @@ class Header extends Component{
 					<HamburgerButton menuClick={this.handleMenuToggle}/>
 					<nav>
 						<ul className="nav__links">
-							<li><Link to='/Syed Adil Hasan Naqvi Resume.pdf' target="_blank" className='link'>Resume</Link></li>
+							<li><Link to='/Adil Naqvi Resume.pdf' target="_blank" className='link'>Resume</Link></li>
 							<li><Link to='/projects' className='link'>Projects</Link></li>
 							<li><Link to='/contact' className='link'>Contact</Link></li>
 							<li><Link to='/about' className='link'>About</Link></li>

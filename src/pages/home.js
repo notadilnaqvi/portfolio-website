@@ -15,7 +15,6 @@ import FourthBlob from '../media/blobs/fourth.png';
 function Home(){
 	return(
 		<>
-
 			<Title pageTitle='Home'/>
 			<Header/>
 			<hr/>
@@ -48,7 +47,7 @@ function Home(){
 				</div>
 				<div className='segment'>
 					<img src={ThirdBlob} alt="" className='third-blob'/>
-					<p>Along with some web development experience, I <br/> have completed several machine learning and AI <br/> projects. This website is one of my latest ones <br/>
+					<p>Along with some web development experience, I <br/> have completed several artificial intelligence <br/> projects. This website is one of my latest ones <br/>
 					<Link to='/projects' className='home-link'>View projects</Link>
 					</p>
 					

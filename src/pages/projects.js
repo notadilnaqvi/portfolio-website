@@ -23,6 +23,17 @@ function Projects() {
 				/>
 
 				<ProjectTile
+					heading="Elo prediction"
+					tags={["Deep learning", "Tenserflow","JS", "Python"]}
+					info="Approximated the chess Elo formula using a deep neural network in Tensorflow.
+					Achieved minumum MSE loss of 0.02"
+					link="View on Github"
+					url="https://www.github.com/notadilnaqvi/elo-prediction"
+					field="CS"
+					year="2020"
+				/>
+
+				<ProjectTile
 					heading="Pakistani food classifier"
 					tags={["Machine learning", "GCP", "AutoML Vision"]}
 					info="Used AutoML Vision by Google Cloud Platform to train a model to classify Pakistani food. Achieved 95% precision with a confidence threshold of 0.6"

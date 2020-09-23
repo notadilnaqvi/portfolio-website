@@ -1,17 +1,16 @@
 import React from 'react';
-// import read1 from "../media/tiles/tgost-tile.png";
-import read2 from "../media/tiles/tfm-tile.png";
-import read3 from "../media/tiles/aot-tile.png";
+import read1 from "../media/tiles/tgost-tile.png";
+import read2 from "../media/tiles/aot-tile.png";
 
-import watch1 from "../media/tiles/dave-tile.png";
-import watch2 from "../media/tiles/chess-tile.png";
+import watch1 from "../media/tiles/bojack-tile.png";
+import watch2 from "../media/tiles/eric-tile.png";
 
-import listen1 from "../media/tiles/shoptalk-tile.png";
-import listen3 from "../media/tiles/jbo-tile.png";
+import listen1 from "../media/tiles/pomp-tile.png";
+import listen2 from "../media/tiles/shoptalk-tile.png";
 
 import play1 from "../media/tiles/aoe-tile.png";
 
-import learn1 from "../media/tiles/flutter-tile.png";
+import learn1 from "../media/tiles/deeplearning-tile.png";
 
 
 function EnjoyedStuff(){
@@ -19,9 +18,8 @@ function EnjoyedStuff(){
 		<div className='enjoyed-stuff-flex-wrapper'>
 			<div className="about-heading">What I'm reading</div>	
 			<div className="enjoyed-segment">
-				{/* <img src={read1} alt=""/> */}
+				<img src={read1} alt=""/>
 				<img src={read2} alt=""/>
-				<img src={read3} alt=""/>
 			</div>
 
 			<div className="about-heading">What I'm watching</div>	
@@ -33,7 +31,7 @@ function EnjoyedStuff(){
 			<div className="about-heading">What I'm listening to</div>	
 			<div className="enjoyed-segment">
 				<img src={listen1} alt=""/>
-				<img src={listen3} alt=""/>
+				<img src={listen2} alt=""/>
 			</div>
 
 			<div className="about-heading">What I'm playing</div>	

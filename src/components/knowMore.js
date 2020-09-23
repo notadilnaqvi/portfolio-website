@@ -75,7 +75,7 @@ function KnowMore(){
 				<img src={SixthImg} alt='' className="about-segment-image"/>
 				<p className='about-segment-text' align='right'>
 					<img src={SixthBlob} alt='' className='sixth-blob'/>
-					I am particularly interested in machine learning and artificial intelligence
+					I am particularly interested in artificial intelligence and data science
 				</p>
 			</div>
 		</div>

@@ -11,7 +11,7 @@ import listen2 from "../media/tiles/shoptalk-tile.png";
 import play1 from "../media/tiles/aoe-tile.png";
 
 import learn1 from "../media/tiles/deeplearning-tile.png";
-import learn1 from "../media/tiles/deutsch-tile.png";
+import learn2 from "../media/tiles/deutsch-tile.png";
 
 
 function EnjoyedStuff(){

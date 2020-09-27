@@ -11,6 +11,7 @@ import listen2 from "../media/tiles/shoptalk-tile.png";
 import play1 from "../media/tiles/aoe-tile.png";
 
 import learn1 from "../media/tiles/deeplearning-tile.png";
+import learn1 from "../media/tiles/deutsch-tile.png";
 
 
 function EnjoyedStuff(){
@@ -42,6 +43,7 @@ function EnjoyedStuff(){
 			<div className="about-heading">What I'm learning</div>	
 			<div className="enjoyed-segment">
 				<img src={learn1} alt=""/>
+				<img src={learn2} alt=""/>
 			</div>
 		</div>
 	);
